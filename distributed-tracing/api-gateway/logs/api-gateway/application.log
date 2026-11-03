@@ -1,0 +1,467 @@
+2026-11-03 17:49:44.514 [background-preinit] INFO  [api-gateway, traceId=, spanId=, requestId=] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2026-11-03 17:49:45.197 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] c.s.gateway.ApiGatewayApplication - Starting ApiGatewayApplication using Java 21.0.9 with PID 9312 (C:\Users\Laptop\Music\Session18\distributed-tracing\api-gateway\target\classes started by Laptop in C:\Users\Laptop\Music\Session18\distributed-tracing\api-gateway)
+2026-11-03 17:49:45.199 [main] DEBUG [api-gateway, traceId=, spanId=, requestId=] c.s.gateway.ApiGatewayApplication - Running with Spring Boot v3.5.7, Spring v6.2.12
+2026-11-03 17:49:45.200 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] c.s.gateway.ApiGatewayApplication - No active profile set, falling back to 1 default profile: "default"
+2026-11-03 17:49:49.741 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.cloud.context.scope.GenericScope - BeanFactory id=342001d6-d5d2-3c4e-82ce-52dc934857e2
+2026-11-03 17:49:51.701 [main] WARN  [api-gateway, traceId=, spanId=, requestId=] o.s.b.w.r.c.AnnotationConfigReactiveWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'httpClientSslConfigurer' defined in class path resource [org/springframework/cloud/gateway/config/GatewayAutoConfiguration$NettyConfiguration.class]: Unsatisfied dependency expressed through method 'httpClientSslConfigurer' parameter 1: Error creating bean with name 'httpClientProperties': Could not bind properties to 'HttpClientProperties' : prefix=spring.cloud.gateway.server.webflux.httpclient, ignoreInvalidFields=false, ignoreUnknownFields=true
+2026-11-03 17:49:51.742 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-11-03 17:49:51.807 [main] ERROR [api-gateway, traceId=, spanId=, requestId=] o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to bind properties under 'spring.cloud.gateway.server.webflux.httpclient.connect-timeout' to java.lang.Integer:
+
+    Property: spring.cloud.gateway.server.webflux.httpclient.connect-timeout
+    Value: "2s"
+    Origin: class path resource [application.yml] - 9:30
+    Reason: failed to convert java.lang.String to java.lang.Integer (caused by java.lang.NumberFormatException: For input string: "2s")
+
+Action:
+
+Update your application's configuration
+
+2026-11-03 17:52:18.791 [background-preinit] INFO  [api-gateway, traceId=, spanId=, requestId=] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2026-11-03 17:52:18.961 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] c.s.gateway.ApiGatewayApplication - Starting ApiGatewayApplication using Java 21.0.9 with PID 32244 (C:\Users\Laptop\Music\Session18\distributed-tracing\api-gateway\target\classes started by Laptop in C:\Users\Laptop\Music\Session18\distributed-tracing\api-gateway)
+2026-11-03 17:52:18.964 [main] DEBUG [api-gateway, traceId=, spanId=, requestId=] c.s.gateway.ApiGatewayApplication - Running with Spring Boot v3.5.7, Spring v6.2.12
+2026-11-03 17:52:18.966 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] c.s.gateway.ApiGatewayApplication - No active profile set, falling back to 1 default profile: "default"
+2026-11-03 17:52:23.635 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.cloud.context.scope.GenericScope - BeanFactory id=342001d6-d5d2-3c4e-82ce-52dc934857e2
+2026-11-03 17:52:26.319 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [After]
+2026-11-03 17:52:26.319 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Before]
+2026-11-03 17:52:26.319 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Between]
+2026-11-03 17:52:26.319 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Cookie]
+2026-11-03 17:52:26.319 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Header]
+2026-11-03 17:52:26.319 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Host]
+2026-11-03 17:52:26.319 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Method]
+2026-11-03 17:52:26.320 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Path]
+2026-11-03 17:52:26.320 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Query]
+2026-11-03 17:52:26.321 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [ReadBody]
+2026-11-03 17:52:26.321 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [RemoteAddr]
+2026-11-03 17:52:26.322 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [XForwardedRemoteAddr]
+2026-11-03 17:52:26.322 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Weight]
+2026-11-03 17:52:26.322 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2026-11-03 17:52:26.871 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.b.a.e.web.EndpointLinksResolver - Exposing 2 endpoints beneath base path '/actuator'
+2026-11-03 17:52:30.013 [main] WARN  [api-gateway, traceId=, spanId=, requestId=] o.s.b.w.r.c.AnnotationConfigReactiveWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2026-11-03 17:52:30.034 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-11-03 17:52:30.094 [main] ERROR [api-gateway, traceId=, spanId=, requestId=] o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+2026-11-03 17:53:15.370 [background-preinit] INFO  [api-gateway, traceId=, spanId=, requestId=] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2026-11-03 17:53:15.528 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] c.s.gateway.ApiGatewayApplication - Starting ApiGatewayApplication using Java 21.0.9 with PID 5476 (C:\Users\Laptop\Music\Session18\distributed-tracing\api-gateway\target\classes started by Laptop in C:\Users\Laptop\Music\Session18\distributed-tracing\api-gateway)
+2026-11-03 17:53:15.530 [main] DEBUG [api-gateway, traceId=, spanId=, requestId=] c.s.gateway.ApiGatewayApplication - Running with Spring Boot v3.5.7, Spring v6.2.12
+2026-11-03 17:53:15.532 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] c.s.gateway.ApiGatewayApplication - No active profile set, falling back to 1 default profile: "default"
+2026-11-03 17:53:19.216 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.cloud.context.scope.GenericScope - BeanFactory id=342001d6-d5d2-3c4e-82ce-52dc934857e2
+2026-11-03 17:53:22.368 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [After]
+2026-11-03 17:53:22.369 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Before]
+2026-11-03 17:53:22.369 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Between]
+2026-11-03 17:53:22.369 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Cookie]
+2026-11-03 17:53:22.370 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Header]
+2026-11-03 17:53:22.370 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Host]
+2026-11-03 17:53:22.370 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Method]
+2026-11-03 17:53:22.370 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Path]
+2026-11-03 17:53:22.371 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Query]
+2026-11-03 17:53:22.371 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [ReadBody]
+2026-11-03 17:53:22.373 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [RemoteAddr]
+2026-11-03 17:53:22.373 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [XForwardedRemoteAddr]
+2026-11-03 17:53:22.373 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Weight]
+2026-11-03 17:53:22.373 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2026-11-03 17:53:23.299 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.b.a.e.web.EndpointLinksResolver - Exposing 2 endpoints beneath base path '/actuator'
+2026-11-03 17:53:27.912 [main] WARN  [api-gateway, traceId=, spanId=, requestId=] o.s.b.w.r.c.AnnotationConfigReactiveWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2026-11-03 17:53:27.948 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-11-03 17:53:27.994 [main] ERROR [api-gateway, traceId=, spanId=, requestId=] o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 18080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 18080 or configure this application to listen on another port.
+
+2026-11-03 17:54:20.319 [background-preinit] INFO  [api-gateway, traceId=, spanId=, requestId=] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2026-11-03 17:54:20.373 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] c.s.gateway.ApiGatewayApplication - Starting ApiGatewayApplication using Java 21.0.9 with PID 6608 (C:\Users\Laptop\Music\Session18\distributed-tracing\api-gateway\target\classes started by Laptop in C:\Users\Laptop\Music\Session18\distributed-tracing\api-gateway)
+2026-11-03 17:54:20.374 [main] DEBUG [api-gateway, traceId=, spanId=, requestId=] c.s.gateway.ApiGatewayApplication - Running with Spring Boot v3.5.7, Spring v6.2.12
+2026-11-03 17:54:20.375 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] c.s.gateway.ApiGatewayApplication - No active profile set, falling back to 1 default profile: "default"
+2026-11-03 17:54:22.045 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.cloud.context.scope.GenericScope - BeanFactory id=342001d6-d5d2-3c4e-82ce-52dc934857e2
+2026-11-03 17:54:23.230 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [After]
+2026-11-03 17:54:23.231 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Before]
+2026-11-03 17:54:23.231 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Between]
+2026-11-03 17:54:23.231 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Cookie]
+2026-11-03 17:54:23.233 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Header]
+2026-11-03 17:54:23.233 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Host]
+2026-11-03 17:54:23.233 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Method]
+2026-11-03 17:54:23.233 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Path]
+2026-11-03 17:54:23.233 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Query]
+2026-11-03 17:54:23.234 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [ReadBody]
+2026-11-03 17:54:23.234 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [RemoteAddr]
+2026-11-03 17:54:23.234 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [XForwardedRemoteAddr]
+2026-11-03 17:54:23.234 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Weight]
+2026-11-03 17:54:23.234 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2026-11-03 17:54:23.680 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.b.a.e.web.EndpointLinksResolver - Exposing 2 endpoints beneath base path '/actuator'
+2026-11-03 17:54:24.867 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.b.w.e.netty.NettyWebServer - Netty started on port 63982 (http)
+2026-11-03 17:54:25.080 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] c.s.gateway.ApiGatewayApplication - Started ApiGatewayApplication in 5.691 seconds (process running for 6.865)
+2026-11-03 17:54:57.625 [reactor-http-nio-2] INFO  [api-gateway, traceId=, spanId=, requestId=b25677e3-19b0-41a1-94ba-57f4b47275f0] c.s.g.GatewayTraceLoggingFilter - Received request from client: /api/orders/test-tracing
+2026-11-03 17:54:57.625 [reactor-http-nio-2] DEBUG [api-gateway, traceId=, spanId=, requestId=b25677e3-19b0-41a1-94ba-57f4b47275f0] c.s.g.GatewayTraceLoggingFilter - Forwarding request through API Gateway
+2026-11-03 17:54:58.126 [reactor-http-nio-2] INFO  [api-gateway, traceId=, spanId=, requestId=] c.s.g.GatewayTraceLoggingFilter - Gateway completed request with status 200 OK
+2026-11-03 17:55:36.073 [reactor-http-nio-3] INFO  [api-gateway, traceId=, spanId=, requestId=f30941a1-7d18-457a-a91f-0be17db67f13] c.s.g.GatewayTraceLoggingFilter - Received request from client: /api/orders/test-tracing
+2026-11-03 17:55:36.073 [reactor-http-nio-3] DEBUG [api-gateway, traceId=, spanId=, requestId=f30941a1-7d18-457a-a91f-0be17db67f13] c.s.g.GatewayTraceLoggingFilter - Forwarding request through API Gateway
+2026-11-03 17:55:36.103 [reactor-http-nio-2] INFO  [api-gateway, traceId=, spanId=, requestId=] c.s.g.GatewayTraceLoggingFilter - Gateway completed request with status 200 OK
+2026-11-03 17:57:50.482 [background-preinit] INFO  [api-gateway, traceId=, spanId=, requestId=] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2026-11-03 17:57:50.578 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] c.s.gateway.ApiGatewayApplication - Starting ApiGatewayApplication using Java 21.0.9 with PID 28072 (C:\Users\Laptop\Music\Session18\distributed-tracing\api-gateway\target\classes started by Laptop in C:\Users\Laptop\Music\Session18\distributed-tracing\api-gateway)
+2026-11-03 17:57:50.580 [main] DEBUG [api-gateway, traceId=, spanId=, requestId=] c.s.gateway.ApiGatewayApplication - Running with Spring Boot v3.5.7, Spring v6.2.12
+2026-11-03 17:57:50.582 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] c.s.gateway.ApiGatewayApplication - No active profile set, falling back to 1 default profile: "default"
+2026-11-03 17:57:53.738 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.cloud.context.scope.GenericScope - BeanFactory id=342001d6-d5d2-3c4e-82ce-52dc934857e2
+2026-11-03 17:57:56.287 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [After]
+2026-11-03 17:57:56.287 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Before]
+2026-11-03 17:57:56.287 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Between]
+2026-11-03 17:57:56.288 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Cookie]
+2026-11-03 17:57:56.288 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Header]
+2026-11-03 17:57:56.288 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Host]
+2026-11-03 17:57:56.288 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Method]
+2026-11-03 17:57:56.288 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Path]
+2026-11-03 17:57:56.288 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Query]
+2026-11-03 17:57:56.288 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [ReadBody]
+2026-11-03 17:57:56.289 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [RemoteAddr]
+2026-11-03 17:57:56.289 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [XForwardedRemoteAddr]
+2026-11-03 17:57:56.289 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Weight]
+2026-11-03 17:57:56.290 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2026-11-03 17:57:57.049 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.b.a.e.web.EndpointLinksResolver - Exposing 2 endpoints beneath base path '/actuator'
+2026-11-03 17:57:58.099 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.b.w.e.netty.NettyWebServer - Netty started on port 63982 (http)
+2026-11-03 17:57:58.236 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] c.s.gateway.ApiGatewayApplication - Started ApiGatewayApplication in 9.39 seconds (process running for 10.234)
+2026-11-03 17:58:15.961 [reactor-http-nio-2] INFO  [api-gateway, traceId=6ae9be477e7234acf39b8576383801cb, spanId=f39b8576383801cb, requestId=2f5e6efa-d753-4944-aea5-d6bc06e40667] c.s.g.GatewayTraceLoggingFilter - Received request from client: /api/orders/test-tracing
+2026-11-03 17:58:15.961 [reactor-http-nio-2] DEBUG [api-gateway, traceId=6ae9be477e7234acf39b8576383801cb, spanId=f39b8576383801cb, requestId=2f5e6efa-d753-4944-aea5-d6bc06e40667] c.s.g.GatewayTraceLoggingFilter - Forwarding request through API Gateway
+2026-11-03 17:58:16.333 [reactor-http-nio-2] INFO  [api-gateway, traceId=6ae9be477e7234acf39b8576383801cb, spanId=f39b8576383801cb, requestId=2f5e6efa-d753-4944-aea5-d6bc06e40667] c.s.g.GatewayTraceLoggingFilter - Gateway completed request with status 200 OK
+2026-11-03 17:58:37.562 [reactor-http-nio-3] INFO  [api-gateway, traceId=4bf92f3577b34da6a3ce929d0e0e4736, spanId=bf8b06676d9583be, requestId=e6d46b85-349c-4b34-8d90-6181b6d7f0cf] c.s.g.GatewayTraceLoggingFilter - Received request from client: /api/orders/test-tracing
+2026-11-03 17:58:37.563 [reactor-http-nio-3] DEBUG [api-gateway, traceId=4bf92f3577b34da6a3ce929d0e0e4736, spanId=bf8b06676d9583be, requestId=e6d46b85-349c-4b34-8d90-6181b6d7f0cf] c.s.g.GatewayTraceLoggingFilter - Forwarding request through API Gateway
+2026-11-03 17:58:37.598 [reactor-http-nio-2] INFO  [api-gateway, traceId=4bf92f3577b34da6a3ce929d0e0e4736, spanId=bf8b06676d9583be, requestId=e6d46b85-349c-4b34-8d90-6181b6d7f0cf] c.s.g.GatewayTraceLoggingFilter - Gateway completed request with status 200 OK
+2026-11-03 17:59:25.967 [background-preinit] INFO  [api-gateway, traceId=, spanId=, requestId=] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2026-11-03 17:59:26.246 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] c.storex.gateway.GatewayContextTest - Starting GatewayContextTest using Java 21.0.9 with PID 21356 (started by Laptop in C:\Users\Laptop\Music\Session18\distributed-tracing\api-gateway)
+2026-11-03 17:59:26.249 [main] DEBUG [api-gateway, traceId=, spanId=, requestId=] c.storex.gateway.GatewayContextTest - Running with Spring Boot v3.5.7, Spring v6.2.12
+2026-11-03 17:59:26.252 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] c.storex.gateway.GatewayContextTest - No active profile set, falling back to 1 default profile: "default"
+2026-11-03 17:59:31.381 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.cloud.context.scope.GenericScope - BeanFactory id=7cc0b2d9-ae95-3e92-8a65-120b9f7c6593
+2026-11-03 17:59:34.599 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [After]
+2026-11-03 17:59:34.600 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Before]
+2026-11-03 17:59:34.600 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Between]
+2026-11-03 17:59:34.600 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Cookie]
+2026-11-03 17:59:34.601 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Header]
+2026-11-03 17:59:34.601 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Host]
+2026-11-03 17:59:34.601 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Method]
+2026-11-03 17:59:34.602 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Path]
+2026-11-03 17:59:34.603 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Query]
+2026-11-03 17:59:34.603 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [ReadBody]
+2026-11-03 17:59:34.604 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [RemoteAddr]
+2026-11-03 17:59:34.604 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [XForwardedRemoteAddr]
+2026-11-03 17:59:34.604 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Weight]
+2026-11-03 17:59:34.604 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2026-11-03 17:59:35.343 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.b.a.e.web.EndpointLinksResolver - Exposing 2 endpoints beneath base path '/actuator'
+2026-11-03 17:59:36.545 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.b.w.e.netty.NettyWebServer - Netty started on port 56604 (http)
+2026-11-03 17:59:36.899 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] c.storex.gateway.GatewayContextTest - Started GatewayContextTest in 13.522 seconds (process running for 17.409)
+2026-11-03 17:59:39.138 [SpringApplicationShutdownHook] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.b.w.e.netty.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-11-03 17:59:39.143 [netty-shutdown] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.b.w.e.netty.GracefulShutdown - Graceful shutdown complete
+2026-11-03 18:00:57.390 [background-preinit] INFO  [api-gateway, traceId=, spanId=, requestId=] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2026-11-03 18:00:57.537 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] c.storex.gateway.GatewayContextTest - Starting GatewayContextTest using Java 21.0.9 with PID 25780 (started by Laptop in C:\Users\Laptop\Music\Session18\distributed-tracing\api-gateway)
+2026-11-03 18:00:57.538 [main] DEBUG [api-gateway, traceId=, spanId=, requestId=] c.storex.gateway.GatewayContextTest - Running with Spring Boot v3.5.7, Spring v6.2.12
+2026-11-03 18:00:57.540 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] c.storex.gateway.GatewayContextTest - No active profile set, falling back to 1 default profile: "default"
+2026-11-03 18:01:01.760 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.cloud.context.scope.GenericScope - BeanFactory id=7cc0b2d9-ae95-3e92-8a65-120b9f7c6593
+2026-11-03 18:01:04.429 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [After]
+2026-11-03 18:01:04.429 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Before]
+2026-11-03 18:01:04.429 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Between]
+2026-11-03 18:01:04.429 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Cookie]
+2026-11-03 18:01:04.430 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Header]
+2026-11-03 18:01:04.430 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Host]
+2026-11-03 18:01:04.430 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Method]
+2026-11-03 18:01:04.430 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Path]
+2026-11-03 18:01:04.431 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Query]
+2026-11-03 18:01:04.431 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [ReadBody]
+2026-11-03 18:01:04.431 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [RemoteAddr]
+2026-11-03 18:01:04.431 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [XForwardedRemoteAddr]
+2026-11-03 18:01:04.432 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Weight]
+2026-11-03 18:01:04.432 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2026-11-03 18:01:05.141 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.b.a.e.web.EndpointLinksResolver - Exposing 2 endpoints beneath base path '/actuator'
+2026-11-03 18:01:06.234 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.b.w.e.netty.NettyWebServer - Netty started on port 58637 (http)
+2026-11-03 18:01:06.365 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] c.storex.gateway.GatewayContextTest - Started GatewayContextTest in 10.022 seconds (process running for 11.985)
+2026-11-03 18:01:07.944 [SpringApplicationShutdownHook] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.b.w.e.netty.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-11-03 18:01:07.951 [netty-shutdown] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.b.w.e.netty.GracefulShutdown - Graceful shutdown complete
+2026-11-03 18:01:48.724 [background-preinit] INFO  [api-gateway, traceId=, spanId=, requestId=] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2026-11-03 18:01:48.870 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] c.storex.gateway.GatewayContextTest - Starting GatewayContextTest using Java 21.0.9 with PID 25436 (started by Laptop in C:\Users\Laptop\Music\Session18\distributed-tracing\api-gateway)
+2026-11-03 18:01:48.871 [main] DEBUG [api-gateway, traceId=, spanId=, requestId=] c.storex.gateway.GatewayContextTest - Running with Spring Boot v3.5.7, Spring v6.2.12
+2026-11-03 18:01:48.874 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] c.storex.gateway.GatewayContextTest - No active profile set, falling back to 1 default profile: "default"
+2026-11-03 18:01:53.084 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.cloud.context.scope.GenericScope - BeanFactory id=7cc0b2d9-ae95-3e92-8a65-120b9f7c6593
+2026-11-03 18:01:55.510 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [After]
+2026-11-03 18:01:55.511 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Before]
+2026-11-03 18:01:55.511 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Between]
+2026-11-03 18:01:55.512 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Cookie]
+2026-11-03 18:01:55.512 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Header]
+2026-11-03 18:01:55.512 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Host]
+2026-11-03 18:01:55.512 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Method]
+2026-11-03 18:01:55.513 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Path]
+2026-11-03 18:01:55.513 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Query]
+2026-11-03 18:01:55.513 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [ReadBody]
+2026-11-03 18:01:55.514 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [RemoteAddr]
+2026-11-03 18:01:55.514 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [XForwardedRemoteAddr]
+2026-11-03 18:01:55.514 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Weight]
+2026-11-03 18:01:55.514 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2026-11-03 18:01:56.324 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.b.a.e.web.EndpointLinksResolver - Exposing 2 endpoints beneath base path '/actuator'
+2026-11-03 18:01:58.273 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.b.w.e.netty.NettyWebServer - Netty started on port 58676 (http)
+2026-11-03 18:01:58.540 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] c.storex.gateway.GatewayContextTest - Started GatewayContextTest in 11.343 seconds (process running for 14.965)
+2026-11-03 18:02:00.934 [SpringApplicationShutdownHook] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.b.w.e.netty.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-11-03 18:02:00.938 [netty-shutdown] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.b.w.e.netty.GracefulShutdown - Graceful shutdown complete
+2026-11-03 18:04:07.144 [background-preinit] INFO  [api-gateway, traceId=, spanId=, requestId=] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2026-11-03 18:04:07.212 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] c.s.gateway.ApiGatewayApplication - Starting ApiGatewayApplication using Java 21.0.9 with PID 24984 (C:\Users\Laptop\Music\Session18\distributed-tracing\api-gateway\target\classes started by Laptop in C:\Users\Laptop\Music\Session18\distributed-tracing\api-gateway)
+2026-11-03 18:04:07.213 [main] DEBUG [api-gateway, traceId=, spanId=, requestId=] c.s.gateway.ApiGatewayApplication - Running with Spring Boot v3.5.7, Spring v6.2.12
+2026-11-03 18:04:07.215 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] c.s.gateway.ApiGatewayApplication - No active profile set, falling back to 1 default profile: "default"
+2026-11-03 18:04:09.102 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.cloud.context.scope.GenericScope - BeanFactory id=342001d6-d5d2-3c4e-82ce-52dc934857e2
+2026-11-03 18:04:10.762 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [After]
+2026-11-03 18:04:10.763 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Before]
+2026-11-03 18:04:10.763 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Between]
+2026-11-03 18:04:10.764 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Cookie]
+2026-11-03 18:04:10.764 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Header]
+2026-11-03 18:04:10.764 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Host]
+2026-11-03 18:04:10.764 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Method]
+2026-11-03 18:04:10.764 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Path]
+2026-11-03 18:04:10.764 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Query]
+2026-11-03 18:04:10.765 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [ReadBody]
+2026-11-03 18:04:10.765 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [RemoteAddr]
+2026-11-03 18:04:10.765 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [XForwardedRemoteAddr]
+2026-11-03 18:04:10.765 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Weight]
+2026-11-03 18:04:10.765 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2026-11-03 18:04:11.305 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.b.a.e.web.EndpointLinksResolver - Exposing 2 endpoints beneath base path '/actuator'
+2026-11-03 18:04:12.092 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.b.w.e.netty.NettyWebServer - Netty started on port 63982 (http)
+2026-11-03 18:04:12.233 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] c.s.gateway.ApiGatewayApplication - Started ApiGatewayApplication in 6.244 seconds (process running for 7.427)
+2026-11-03 18:04:47.814 [reactor-http-nio-2] INFO  [api-gateway, traceId=4bf92f3577b34da6a3ce929d0e0e4736, spanId=e1abf87afe2b9ffa, requestId=7e960542-4a3f-45a6-b0ed-21f6b0d41822] c.s.g.GatewayTraceLoggingFilter - Received request from client: /api/orders/test-tracing
+2026-11-03 18:04:47.814 [reactor-http-nio-2] DEBUG [api-gateway, traceId=4bf92f3577b34da6a3ce929d0e0e4736, spanId=e1abf87afe2b9ffa, requestId=7e960542-4a3f-45a6-b0ed-21f6b0d41822] c.s.g.GatewayTraceLoggingFilter - Forwarding request through API Gateway
+2026-11-03 18:04:48.452 [reactor-http-nio-2] INFO  [api-gateway, traceId=4bf92f3577b34da6a3ce929d0e0e4736, spanId=e1abf87afe2b9ffa, requestId=7e960542-4a3f-45a6-b0ed-21f6b0d41822] c.s.g.GatewayTraceLoggingFilter - Gateway completed request with status 502 BAD_GATEWAY
+2026-11-03 18:06:19.997 [reactor-http-nio-3] INFO  [api-gateway, traceId=4bf92f3577b34da6a3ce929d0e0e4736, spanId=c4d3a01e713125ff, requestId=9b57f3d8-59e9-44a7-85f1-5f6c3c606438] c.s.g.GatewayTraceLoggingFilter - Received request from client: /api/orders/test-tracing
+2026-11-03 18:06:19.997 [reactor-http-nio-3] DEBUG [api-gateway, traceId=4bf92f3577b34da6a3ce929d0e0e4736, spanId=c4d3a01e713125ff, requestId=9b57f3d8-59e9-44a7-85f1-5f6c3c606438] c.s.g.GatewayTraceLoggingFilter - Forwarding request through API Gateway
+2026-11-03 18:06:25.938 [parallel-3] INFO  [api-gateway, traceId=4bf92f3577b34da6a3ce929d0e0e4736, spanId=c4d3a01e713125ff, requestId=9b57f3d8-59e9-44a7-85f1-5f6c3c606438] c.s.g.GatewayTraceLoggingFilter - Gateway completed request with status 504 GATEWAY_TIMEOUT
+2026-11-03 18:06:44.273 [reactor-http-nio-4] INFO  [api-gateway, traceId=6ae9c04432062348c2adb1d35d5d3c2c, spanId=c2adb1d35d5d3c2c, requestId=2da282e7-235d-4243-b5fa-76e57558ff08] c.s.g.GatewayTraceLoggingFilter - Received request from client: /api/orders/test-tracing
+2026-11-03 18:06:44.273 [reactor-http-nio-4] DEBUG [api-gateway, traceId=6ae9c04432062348c2adb1d35d5d3c2c, spanId=c2adb1d35d5d3c2c, requestId=2da282e7-235d-4243-b5fa-76e57558ff08] c.s.g.GatewayTraceLoggingFilter - Forwarding request through API Gateway
+2026-11-03 18:06:44.300 [reactor-http-nio-4] INFO  [api-gateway, traceId=6ae9c04432062348c2adb1d35d5d3c2c, spanId=c2adb1d35d5d3c2c, requestId=2da282e7-235d-4243-b5fa-76e57558ff08] c.s.g.GatewayTraceLoggingFilter - Gateway completed request with status 200 OK
+2026-11-03 18:08:55.374 [background-preinit] INFO  [api-gateway, traceId=, spanId=, requestId=] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2026-11-03 18:08:55.504 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] c.storex.gateway.GatewayContextTest - Starting GatewayContextTest using Java 21.0.9 with PID 7180 (started by Laptop in C:\Users\Laptop\Music\Session18\distributed-tracing\api-gateway)
+2026-11-03 18:08:55.505 [main] DEBUG [api-gateway, traceId=, spanId=, requestId=] c.storex.gateway.GatewayContextTest - Running with Spring Boot v3.5.7, Spring v6.2.12
+2026-11-03 18:08:55.506 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] c.storex.gateway.GatewayContextTest - No active profile set, falling back to 1 default profile: "default"
+2026-11-03 18:08:59.491 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.cloud.context.scope.GenericScope - BeanFactory id=7cc0b2d9-ae95-3e92-8a65-120b9f7c6593
+2026-11-03 18:09:02.414 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [After]
+2026-11-03 18:09:02.414 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Before]
+2026-11-03 18:09:02.415 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Between]
+2026-11-03 18:09:02.415 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Cookie]
+2026-11-03 18:09:02.415 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Header]
+2026-11-03 18:09:02.415 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Host]
+2026-11-03 18:09:02.416 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Method]
+2026-11-03 18:09:02.416 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Path]
+2026-11-03 18:09:02.416 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Query]
+2026-11-03 18:09:02.416 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [ReadBody]
+2026-11-03 18:09:02.416 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [RemoteAddr]
+2026-11-03 18:09:02.417 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [XForwardedRemoteAddr]
+2026-11-03 18:09:02.417 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Weight]
+2026-11-03 18:09:02.417 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2026-11-03 18:09:03.032 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.b.a.e.web.EndpointLinksResolver - Exposing 2 endpoints beneath base path '/actuator'
+2026-11-03 18:09:04.092 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.b.w.e.netty.NettyWebServer - Netty started on port 54580 (http)
+2026-11-03 18:09:04.257 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] c.storex.gateway.GatewayContextTest - Started GatewayContextTest in 10.187 seconds (process running for 12.559)
+2026-11-03 18:09:05.910 [SpringApplicationShutdownHook] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.b.w.e.netty.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-11-03 18:09:05.914 [netty-shutdown] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.b.w.e.netty.GracefulShutdown - Graceful shutdown complete
+2026-11-03 18:10:06.061 [background-preinit] INFO  [api-gateway, traceId=, spanId=, requestId=] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2026-11-03 18:10:06.161 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] c.s.gateway.ApiGatewayApplication - Starting ApiGatewayApplication using Java 21.0.9 with PID 25088 (C:\Users\Laptop\Music\Session18\distributed-tracing\api-gateway\target\classes started by Laptop in C:\Users\Laptop\Music\Session18\distributed-tracing\api-gateway)
+2026-11-03 18:10:06.163 [main] DEBUG [api-gateway, traceId=, spanId=, requestId=] c.s.gateway.ApiGatewayApplication - Running with Spring Boot v3.5.7, Spring v6.2.12
+2026-11-03 18:10:06.164 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] c.s.gateway.ApiGatewayApplication - No active profile set, falling back to 1 default profile: "default"
+2026-11-03 18:10:08.827 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.cloud.context.scope.GenericScope - BeanFactory id=342001d6-d5d2-3c4e-82ce-52dc934857e2
+2026-11-03 18:10:11.134 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [After]
+2026-11-03 18:10:11.134 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Before]
+2026-11-03 18:10:11.134 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Between]
+2026-11-03 18:10:11.134 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Cookie]
+2026-11-03 18:10:11.134 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Header]
+2026-11-03 18:10:11.134 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Host]
+2026-11-03 18:10:11.134 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Method]
+2026-11-03 18:10:11.135 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Path]
+2026-11-03 18:10:11.136 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Query]
+2026-11-03 18:10:11.136 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [ReadBody]
+2026-11-03 18:10:11.136 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [RemoteAddr]
+2026-11-03 18:10:11.136 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [XForwardedRemoteAddr]
+2026-11-03 18:10:11.136 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Weight]
+2026-11-03 18:10:11.136 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2026-11-03 18:10:11.731 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.b.a.e.web.EndpointLinksResolver - Exposing 2 endpoints beneath base path '/actuator'
+2026-11-03 18:10:12.584 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.b.w.e.netty.NettyWebServer - Netty started on port 63982 (http)
+2026-11-03 18:10:12.715 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] c.s.gateway.ApiGatewayApplication - Started ApiGatewayApplication in 8.009 seconds (process running for 9.185)
+2026-11-03 18:10:43.131 [reactor-http-nio-2] INFO  [api-gateway, traceId=6ae9c1334e5ac1f315a8e3f7e11b79d1, spanId=15a8e3f7e11b79d1, requestId=59eda2a1-f7c1-48ec-88c9-228de813baa0] c.s.g.GatewayTraceLoggingFilter - Received request from client: /api/orders/test-tracing
+2026-11-03 18:10:43.132 [reactor-http-nio-2] DEBUG [api-gateway, traceId=6ae9c1334e5ac1f315a8e3f7e11b79d1, spanId=15a8e3f7e11b79d1, requestId=59eda2a1-f7c1-48ec-88c9-228de813baa0] c.s.g.GatewayTraceLoggingFilter - Forwarding request through API Gateway
+2026-11-03 18:10:43.981 [reactor-http-nio-2] INFO  [api-gateway, traceId=6ae9c1334e5ac1f315a8e3f7e11b79d1, spanId=15a8e3f7e11b79d1, requestId=59eda2a1-f7c1-48ec-88c9-228de813baa0] c.s.g.GatewayTraceLoggingFilter - Gateway completed request with status 200 OK
+2026-11-03 18:10:44.026 [reactor-http-nio-2] INFO  [api-gateway, traceId=6ae9c1344e4ae69db1d94cd2b2ba0d0a, spanId=b1d94cd2b2ba0d0a, requestId=eab3af63-1379-4888-84de-4ff91095181b] c.s.g.GatewayTraceLoggingFilter - Received request from client: /api/orders/test-tracing
+2026-11-03 18:10:44.027 [reactor-http-nio-2] DEBUG [api-gateway, traceId=6ae9c1344e4ae69db1d94cd2b2ba0d0a, spanId=b1d94cd2b2ba0d0a, requestId=eab3af63-1379-4888-84de-4ff91095181b] c.s.g.GatewayTraceLoggingFilter - Forwarding request through API Gateway
+2026-11-03 18:10:44.045 [reactor-http-nio-2] INFO  [api-gateway, traceId=6ae9c1344e4ae69db1d94cd2b2ba0d0a, spanId=b1d94cd2b2ba0d0a, requestId=eab3af63-1379-4888-84de-4ff91095181b] c.s.g.GatewayTraceLoggingFilter - Gateway completed request with status 200 OK
+2026-11-03 18:12:01.709 [background-preinit] INFO  [api-gateway, traceId=, spanId=, requestId=] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2026-11-03 18:12:01.838 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] c.s.gateway.ApiGatewayApplication - Starting ApiGatewayApplication using Java 21.0.9 with PID 10272 (C:\Users\Laptop\Music\Session18\distributed-tracing\api-gateway\target\classes started by Laptop in C:\Users\Laptop\Music\Session18\distributed-tracing\api-gateway)
+2026-11-03 18:12:01.840 [main] DEBUG [api-gateway, traceId=, spanId=, requestId=] c.s.gateway.ApiGatewayApplication - Running with Spring Boot v3.5.7, Spring v6.2.12
+2026-11-03 18:12:01.842 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] c.s.gateway.ApiGatewayApplication - No active profile set, falling back to 1 default profile: "default"
+2026-11-03 18:12:04.395 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.cloud.context.scope.GenericScope - BeanFactory id=342001d6-d5d2-3c4e-82ce-52dc934857e2
+2026-11-03 18:12:06.110 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [After]
+2026-11-03 18:12:06.110 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Before]
+2026-11-03 18:12:06.110 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Between]
+2026-11-03 18:12:06.110 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Cookie]
+2026-11-03 18:12:06.110 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Header]
+2026-11-03 18:12:06.110 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Host]
+2026-11-03 18:12:06.111 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Method]
+2026-11-03 18:12:06.111 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Path]
+2026-11-03 18:12:06.112 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Query]
+2026-11-03 18:12:06.112 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [ReadBody]
+2026-11-03 18:12:06.112 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [RemoteAddr]
+2026-11-03 18:12:06.112 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [XForwardedRemoteAddr]
+2026-11-03 18:12:06.112 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Weight]
+2026-11-03 18:12:06.112 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2026-11-03 18:12:06.693 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.b.a.e.web.EndpointLinksResolver - Exposing 2 endpoints beneath base path '/actuator'
+2026-11-03 18:12:07.459 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.b.w.e.netty.NettyWebServer - Netty started on port 63982 (http)
+2026-11-03 18:12:07.581 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] c.s.gateway.ApiGatewayApplication - Started ApiGatewayApplication in 7.688 seconds (process running for 9.379)
+2026-11-03 18:12:36.295 [reactor-http-nio-2] INFO  [api-gateway, traceId=6ae9c1a4c677ed242762069b399fb6ef, spanId=2762069b399fb6ef, requestId=736ac16d-8575-4992-a855-9c2ad43e0e31] c.s.g.GatewayTraceLoggingFilter - Received request from client: /api/orders/test-tracing
+2026-11-03 18:12:36.296 [reactor-http-nio-2] DEBUG [api-gateway, traceId=6ae9c1a4c677ed242762069b399fb6ef, spanId=2762069b399fb6ef, requestId=736ac16d-8575-4992-a855-9c2ad43e0e31] c.s.g.GatewayTraceLoggingFilter - Forwarding request through API Gateway
+2026-11-03 18:12:37.668 [reactor-http-nio-2] INFO  [api-gateway, traceId=6ae9c1a4c677ed242762069b399fb6ef, spanId=2762069b399fb6ef, requestId=736ac16d-8575-4992-a855-9c2ad43e0e31] c.s.g.GatewayTraceLoggingFilter - Gateway completed request with status 200 OK
+2026-11-03 18:12:37.927 [reactor-http-nio-2] INFO  [api-gateway, traceId=6ae9c1a56825e358c509e3740b3000ed, spanId=c509e3740b3000ed, requestId=1fbfb278-8ba2-4113-84f1-a84bffdbdf80] c.s.g.GatewayTraceLoggingFilter - Received request from client: /api/orders/test-tracing
+2026-11-03 18:12:37.927 [reactor-http-nio-2] DEBUG [api-gateway, traceId=6ae9c1a56825e358c509e3740b3000ed, spanId=c509e3740b3000ed, requestId=1fbfb278-8ba2-4113-84f1-a84bffdbdf80] c.s.g.GatewayTraceLoggingFilter - Forwarding request through API Gateway
+2026-11-03 18:12:37.959 [reactor-http-nio-2] INFO  [api-gateway, traceId=6ae9c1a56825e358c509e3740b3000ed, spanId=c509e3740b3000ed, requestId=1fbfb278-8ba2-4113-84f1-a84bffdbdf80] c.s.g.GatewayTraceLoggingFilter - Gateway completed request with status 200 OK
+2026-11-03 18:14:50.824 [background-preinit] INFO  [api-gateway, traceId=, spanId=, requestId=] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2026-11-03 18:14:50.939 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] c.s.gateway.ApiGatewayApplication - Starting ApiGatewayApplication using Java 21.0.9 with PID 31196 (C:\Users\Laptop\Music\Session18\distributed-tracing\api-gateway\target\classes started by Laptop in C:\Users\Laptop\Music\Session18\distributed-tracing\api-gateway)
+2026-11-03 18:14:50.940 [main] DEBUG [api-gateway, traceId=, spanId=, requestId=] c.s.gateway.ApiGatewayApplication - Running with Spring Boot v3.5.7, Spring v6.2.12
+2026-11-03 18:14:50.942 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] c.s.gateway.ApiGatewayApplication - No active profile set, falling back to 1 default profile: "default"
+2026-11-03 18:14:53.744 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.cloud.context.scope.GenericScope - BeanFactory id=342001d6-d5d2-3c4e-82ce-52dc934857e2
+2026-11-03 18:14:55.773 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [After]
+2026-11-03 18:14:55.775 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Before]
+2026-11-03 18:14:55.775 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Between]
+2026-11-03 18:14:55.775 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Cookie]
+2026-11-03 18:14:55.775 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Header]
+2026-11-03 18:14:55.776 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Host]
+2026-11-03 18:14:55.776 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Method]
+2026-11-03 18:14:55.776 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Path]
+2026-11-03 18:14:55.776 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Query]
+2026-11-03 18:14:55.776 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [ReadBody]
+2026-11-03 18:14:55.777 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [RemoteAddr]
+2026-11-03 18:14:55.777 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [XForwardedRemoteAddr]
+2026-11-03 18:14:55.777 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Weight]
+2026-11-03 18:14:55.777 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2026-11-03 18:14:56.352 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.b.a.e.web.EndpointLinksResolver - Exposing 2 endpoints beneath base path '/actuator'
+2026-11-03 18:14:57.226 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.b.w.e.netty.NettyWebServer - Netty started on port 63982 (http)
+2026-11-03 18:14:57.373 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] c.s.gateway.ApiGatewayApplication - Started ApiGatewayApplication in 8.544 seconds (process running for 10.152)
+2026-11-03 18:16:11.320 [background-preinit] INFO  [api-gateway, traceId=, spanId=, requestId=] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2026-11-03 18:16:11.365 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] c.s.gateway.ApiGatewayApplication - Starting ApiGatewayApplication using Java 21.0.9 with PID 30008 (C:\Users\Laptop\Music\Session18\distributed-tracing\api-gateway\target\classes started by Laptop in C:\Users\Laptop\Music\Session18\distributed-tracing\api-gateway)
+2026-11-03 18:16:11.365 [main] DEBUG [api-gateway, traceId=, spanId=, requestId=] c.s.gateway.ApiGatewayApplication - Running with Spring Boot v3.5.7, Spring v6.2.12
+2026-11-03 18:16:11.366 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] c.s.gateway.ApiGatewayApplication - No active profile set, falling back to 1 default profile: "default"
+2026-11-03 18:16:12.916 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.cloud.context.scope.GenericScope - BeanFactory id=342001d6-d5d2-3c4e-82ce-52dc934857e2
+2026-11-03 18:16:14.670 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [After]
+2026-11-03 18:16:14.671 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Before]
+2026-11-03 18:16:14.671 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Between]
+2026-11-03 18:16:14.671 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Cookie]
+2026-11-03 18:16:14.671 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Header]
+2026-11-03 18:16:14.671 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Host]
+2026-11-03 18:16:14.671 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Method]
+2026-11-03 18:16:14.671 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Path]
+2026-11-03 18:16:14.673 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Query]
+2026-11-03 18:16:14.673 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [ReadBody]
+2026-11-03 18:16:14.673 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [RemoteAddr]
+2026-11-03 18:16:14.673 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [XForwardedRemoteAddr]
+2026-11-03 18:16:14.673 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Weight]
+2026-11-03 18:16:14.673 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2026-11-03 18:16:15.199 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.b.a.e.web.EndpointLinksResolver - Exposing 2 endpoints beneath base path '/actuator'
+2026-11-03 18:16:16.055 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.b.w.e.netty.NettyWebServer - Netty started on port 63982 (http)
+2026-11-03 18:16:16.213 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] c.s.gateway.ApiGatewayApplication - Started ApiGatewayApplication in 5.672 seconds (process running for 6.493)
+2026-11-03 18:16:47.595 [reactor-http-nio-2] INFO  [api-gateway, traceId=6ae9c29fded29f82af794d9130d46ebc, spanId=af794d9130d46ebc, requestId=3f5cbabe-72ba-42f9-a99a-db49ccf7a623] c.s.g.GatewayTraceLoggingFilter - Received request from client: /api/orders/test-tracing
+2026-11-03 18:16:47.595 [reactor-http-nio-2] DEBUG [api-gateway, traceId=6ae9c29fded29f82af794d9130d46ebc, spanId=af794d9130d46ebc, requestId=3f5cbabe-72ba-42f9-a99a-db49ccf7a623] c.s.g.GatewayTraceLoggingFilter - Forwarding request through API Gateway
+2026-11-03 18:16:48.474 [reactor-http-nio-2] INFO  [api-gateway, traceId=6ae9c29fded29f82af794d9130d46ebc, spanId=af794d9130d46ebc, requestId=3f5cbabe-72ba-42f9-a99a-db49ccf7a623] c.s.g.GatewayTraceLoggingFilter - Gateway completed request with status 200 OK
+2026-11-03 18:17:34.087 [background-preinit] INFO  [api-gateway, traceId=, spanId=, requestId=] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2026-11-03 18:17:34.154 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] c.s.gateway.ApiGatewayApplication - Starting ApiGatewayApplication using Java 21.0.9 with PID 31540 (C:\Users\Laptop\Music\Session18\distributed-tracing\api-gateway\target\classes started by Laptop in C:\Users\Laptop\Music\Session18\distributed-tracing\api-gateway)
+2026-11-03 18:17:34.155 [main] DEBUG [api-gateway, traceId=, spanId=, requestId=] c.s.gateway.ApiGatewayApplication - Running with Spring Boot v3.5.7, Spring v6.2.12
+2026-11-03 18:17:34.158 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] c.s.gateway.ApiGatewayApplication - No active profile set, falling back to 1 default profile: "default"
+2026-11-03 18:17:36.707 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.cloud.context.scope.GenericScope - BeanFactory id=2621ac01-b6fe-3586-b09f-d0025052cdc2
+2026-11-03 18:17:39.353 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [After]
+2026-11-03 18:17:39.354 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Before]
+2026-11-03 18:17:39.355 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Between]
+2026-11-03 18:17:39.355 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Cookie]
+2026-11-03 18:17:39.355 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Header]
+2026-11-03 18:17:39.355 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Host]
+2026-11-03 18:17:39.355 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Method]
+2026-11-03 18:17:39.355 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Path]
+2026-11-03 18:17:39.355 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Query]
+2026-11-03 18:17:39.355 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [ReadBody]
+2026-11-03 18:17:39.355 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [RemoteAddr]
+2026-11-03 18:17:39.355 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [XForwardedRemoteAddr]
+2026-11-03 18:17:39.357 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Weight]
+2026-11-03 18:17:39.357 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2026-11-03 18:17:40.004 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.b.a.e.web.EndpointLinksResolver - Exposing 2 endpoints beneath base path '/actuator'
+2026-11-03 18:17:40.807 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.b.w.e.netty.NettyWebServer - Netty started on port 63982 (http)
+2026-11-03 18:17:40.964 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] c.s.gateway.ApiGatewayApplication - Started ApiGatewayApplication in 7.963 seconds (process running for 9.201)
+2026-11-03 18:18:12.330 [reactor-http-nio-2] INFO  [api-gateway, traceId=6ae9c2f4e3b2002962b68d6fc1de6997, spanId=62b68d6fc1de6997, requestId=d64a9e1e-ae96-4919-82f2-7ce5424b6f19] c.s.g.GatewayTraceLoggingFilter - Received request from client: /api/orders/test-tracing
+2026-11-03 18:18:12.330 [reactor-http-nio-2] DEBUG [api-gateway, traceId=6ae9c2f4e3b2002962b68d6fc1de6997, spanId=62b68d6fc1de6997, requestId=d64a9e1e-ae96-4919-82f2-7ce5424b6f19] c.s.g.GatewayTraceLoggingFilter - Forwarding request through API Gateway
+2026-11-03 18:18:13.614 [reactor-http-nio-2] INFO  [api-gateway, traceId=6ae9c2f4e3b2002962b68d6fc1de6997, spanId=62b68d6fc1de6997, requestId=d64a9e1e-ae96-4919-82f2-7ce5424b6f19] c.s.g.GatewayTraceLoggingFilter - Gateway completed request with status 200 OK
+2026-11-03 18:19:09.038 [background-preinit] INFO  [api-gateway, traceId=, spanId=, requestId=] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2026-11-03 18:19:09.120 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] c.s.gateway.ApiGatewayApplication - Starting ApiGatewayApplication using Java 21.0.9 with PID 26104 (C:\Users\Laptop\Music\Session18\distributed-tracing\api-gateway\target\classes started by Laptop in C:\Users\Laptop\Music\Session18\distributed-tracing\api-gateway)
+2026-11-03 18:19:09.121 [main] DEBUG [api-gateway, traceId=, spanId=, requestId=] c.s.gateway.ApiGatewayApplication - Running with Spring Boot v3.5.7, Spring v6.2.12
+2026-11-03 18:19:09.121 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] c.s.gateway.ApiGatewayApplication - No active profile set, falling back to 1 default profile: "default"
+2026-11-03 18:19:11.440 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.cloud.context.scope.GenericScope - BeanFactory id=342001d6-d5d2-3c4e-82ce-52dc934857e2
+2026-11-03 18:19:13.547 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [After]
+2026-11-03 18:19:13.547 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Before]
+2026-11-03 18:19:13.548 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Between]
+2026-11-03 18:19:13.548 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Cookie]
+2026-11-03 18:19:13.548 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Header]
+2026-11-03 18:19:13.549 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Host]
+2026-11-03 18:19:13.549 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Method]
+2026-11-03 18:19:13.550 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Path]
+2026-11-03 18:19:13.550 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Query]
+2026-11-03 18:19:13.550 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [ReadBody]
+2026-11-03 18:19:13.550 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [RemoteAddr]
+2026-11-03 18:19:13.550 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [XForwardedRemoteAddr]
+2026-11-03 18:19:13.550 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Weight]
+2026-11-03 18:19:13.551 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2026-11-03 18:19:14.202 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.b.a.e.web.EndpointLinksResolver - Exposing 2 endpoints beneath base path '/actuator'
+2026-11-03 18:19:15.175 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.b.w.e.netty.NettyWebServer - Netty started on port 63982 (http)
+2026-11-03 18:19:15.347 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] c.s.gateway.ApiGatewayApplication - Started ApiGatewayApplication in 7.476 seconds (process running for 8.86)
+2026-11-03 18:20:13.893 [reactor-http-nio-2] INFO  [api-gateway, traceId=4bf92f3577b34da6a3ce929d0e0e4736, spanId=403f553ef5edbc2a, requestId=1937b3e4-4fe8-4a9f-bd8b-c3237d8a3241] c.s.g.GatewayTraceLoggingFilter - Received request from client: /api/orders/test-tracing
+2026-11-03 18:20:13.894 [reactor-http-nio-2] DEBUG [api-gateway, traceId=4bf92f3577b34da6a3ce929d0e0e4736, spanId=403f553ef5edbc2a, requestId=1937b3e4-4fe8-4a9f-bd8b-c3237d8a3241] c.s.g.GatewayTraceLoggingFilter - Forwarding request through API Gateway
+2026-11-03 18:20:15.252 [reactor-http-nio-2] INFO  [api-gateway, traceId=4bf92f3577b34da6a3ce929d0e0e4736, spanId=403f553ef5edbc2a, requestId=1937b3e4-4fe8-4a9f-bd8b-c3237d8a3241] c.s.g.GatewayTraceLoggingFilter - Gateway completed request with status 200 OK
+2026-11-03 18:20:15.522 [reactor-http-nio-2] INFO  [api-gateway, traceId=6ae9c36f4aa3b8b485f5790e98e20bc8, spanId=85f5790e98e20bc8, requestId=d026eaa1-8a63-4577-aa00-a8d2ebdfd869] c.s.g.GatewayTraceLoggingFilter - Received request from client: /api/orders/test-tracing
+2026-11-03 18:20:15.522 [reactor-http-nio-2] DEBUG [api-gateway, traceId=6ae9c36f4aa3b8b485f5790e98e20bc8, spanId=85f5790e98e20bc8, requestId=d026eaa1-8a63-4577-aa00-a8d2ebdfd869] c.s.g.GatewayTraceLoggingFilter - Forwarding request through API Gateway
+2026-11-03 18:20:15.547 [reactor-http-nio-2] INFO  [api-gateway, traceId=6ae9c36f4aa3b8b485f5790e98e20bc8, spanId=85f5790e98e20bc8, requestId=d026eaa1-8a63-4577-aa00-a8d2ebdfd869] c.s.g.GatewayTraceLoggingFilter - Gateway completed request with status 200 OK
+2026-11-03 18:21:03.744 [background-preinit] INFO  [api-gateway, traceId=, spanId=, requestId=] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2026-11-03 18:21:03.954 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] c.storex.gateway.GatewayContextTest - Starting GatewayContextTest using Java 21.0.9 with PID 17096 (started by Laptop in C:\Users\Laptop\Music\Session18\distributed-tracing\api-gateway)
+2026-11-03 18:21:03.956 [main] DEBUG [api-gateway, traceId=, spanId=, requestId=] c.storex.gateway.GatewayContextTest - Running with Spring Boot v3.5.7, Spring v6.2.12
+2026-11-03 18:21:03.962 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] c.storex.gateway.GatewayContextTest - No active profile set, falling back to 1 default profile: "default"
+2026-11-03 18:21:08.729 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.cloud.context.scope.GenericScope - BeanFactory id=7cc0b2d9-ae95-3e92-8a65-120b9f7c6593
+2026-11-03 18:21:10.895 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [After]
+2026-11-03 18:21:10.895 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Before]
+2026-11-03 18:21:10.896 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Between]
+2026-11-03 18:21:10.896 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Cookie]
+2026-11-03 18:21:10.896 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Header]
+2026-11-03 18:21:10.896 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Host]
+2026-11-03 18:21:10.896 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Method]
+2026-11-03 18:21:10.897 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Path]
+2026-11-03 18:21:10.897 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Query]
+2026-11-03 18:21:10.897 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [ReadBody]
+2026-11-03 18:21:10.897 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [RemoteAddr]
+2026-11-03 18:21:10.897 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [XForwardedRemoteAddr]
+2026-11-03 18:21:10.897 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Weight]
+2026-11-03 18:21:10.897 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2026-11-03 18:21:11.478 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.b.a.e.web.EndpointLinksResolver - Exposing 2 endpoints beneath base path '/actuator'
+2026-11-03 18:21:12.401 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.b.w.e.netty.NettyWebServer - Netty started on port 53616 (http)
+2026-11-03 18:21:12.529 [main] INFO  [api-gateway, traceId=, spanId=, requestId=] c.storex.gateway.GatewayContextTest - Started GatewayContextTest in 10.745 seconds (process running for 14.406)
+2026-11-03 18:21:13.986 [SpringApplicationShutdownHook] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.b.w.e.netty.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-11-03 18:21:13.989 [netty-shutdown] INFO  [api-gateway, traceId=, spanId=, requestId=] o.s.b.w.e.netty.GracefulShutdown - Graceful shutdown complete

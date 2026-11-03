@@ -1,0 +1,26 @@
+spring:
+  application:
+    name: order-service
+
+server:
+  port: ${SERVER_PORT:8081}
+
+services:
+  user:
+    base-url: ${USER_SERVICE_URL:http://localhost:8082}
+    timeout: ${USER_SERVICE_TIMEOUT:3s}
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info
+  tracing:
+    sampling:
+      probability: 1.0
+    propagation:
+      type: w3c
+
+logging:
+  level:
+    com.storex.order: DEBUG

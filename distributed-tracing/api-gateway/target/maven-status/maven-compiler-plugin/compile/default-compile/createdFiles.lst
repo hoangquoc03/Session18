@@ -1,0 +1,3 @@
+com\storex\gateway\GatewayTraceLoggingFilter.class
+com\storex\gateway\GatewayRequestIdFilter.class
+com\storex\gateway\ApiGatewayApplication.class

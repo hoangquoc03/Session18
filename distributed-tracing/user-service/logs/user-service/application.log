@@ -1,0 +1,301 @@
+2026-11-03 17:49:45.171 [main] INFO  [user-service, traceId=, spanId=, requestId=] c.storex.user.UserServiceApplication - Starting UserServiceApplication using Java 21.0.9 with PID 30588 (C:\Users\Laptop\Music\Session18\distributed-tracing\user-service\target\classes started by Laptop in C:\Users\Laptop\Music\Session18\distributed-tracing\user-service)
+2026-11-03 17:49:45.175 [main] DEBUG [user-service, traceId=, spanId=, requestId=] c.storex.user.UserServiceApplication - Running with Spring Boot v3.5.7, Spring v6.2.12
+2026-11-03 17:49:45.187 [main] INFO  [user-service, traceId=, spanId=, requestId=] c.storex.user.UserServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2026-11-03 17:49:50.381 [main] INFO  [user-service, traceId=, spanId=, requestId=] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8082 (http)
+2026-11-03 17:49:50.420 [main] INFO  [user-service, traceId=, spanId=, requestId=] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8082"]
+2026-11-03 17:49:50.425 [main] INFO  [user-service, traceId=, spanId=, requestId=] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-11-03 17:49:50.425 [main] INFO  [user-service, traceId=, spanId=, requestId=] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.48]
+2026-11-03 17:49:50.728 [main] INFO  [user-service, traceId=, spanId=, requestId=] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-11-03 17:49:50.729 [main] INFO  [user-service, traceId=, spanId=, requestId=] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 5362 ms
+2026-11-03 17:49:51.447 [main] DEBUG [user-service, traceId=, spanId=, requestId=] com.storex.user.RequestIdMdcFilter - Filter 'requestIdMdcFilter' configured for use
+2026-11-03 17:49:52.741 [main] INFO  [user-service, traceId=, spanId=, requestId=] o.s.b.a.e.web.EndpointLinksResolver - Exposing 2 endpoints beneath base path '/actuator'
+2026-11-03 17:49:52.871 [main] INFO  [user-service, traceId=, spanId=, requestId=] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8082"]
+2026-11-03 17:49:52.939 [main] INFO  [user-service, traceId=, spanId=, requestId=] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8082 (http) with context path '/'
+2026-11-03 17:49:52.972 [main] INFO  [user-service, traceId=, spanId=, requestId=] c.storex.user.UserServiceApplication - Started UserServiceApplication in 26.626 seconds (process running for 28.05)
+2026-11-03 17:50:04.784 [http-nio-8082-exec-1] INFO  [user-service, traceId=, spanId=, requestId=] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-11-03 17:50:04.784 [http-nio-8082-exec-1] INFO  [user-service, traceId=, spanId=, requestId=] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-11-03 17:50:04.787 [http-nio-8082-exec-1] INFO  [user-service, traceId=, spanId=, requestId=] o.s.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+2026-11-03 17:54:58.003 [http-nio-8082-exec-7] INFO  [user-service, traceId=4bf92f3577b34da6a3ce929d0e0e4736, spanId=1151f6f5abb279fd, requestId=b25677e3-19b0-41a1-94ba-57f4b47275f0] com.storex.user.UserController - Received user information request
+2026-11-03 17:54:58.004 [http-nio-8082-exec-7] DEBUG [user-service, traceId=4bf92f3577b34da6a3ce929d0e0e4736, spanId=1151f6f5abb279fd, requestId=b25677e3-19b0-41a1-94ba-57f4b47275f0] com.storex.user.UserController - Looking up tracing demo user
+2026-11-03 17:54:58.006 [http-nio-8082-exec-7] INFO  [user-service, traceId=4bf92f3577b34da6a3ce929d0e0e4736, spanId=967316ded51338f2, requestId=b25677e3-19b0-41a1-94ba-57f4b47275f0] com.storex.user.UserService - Fetching user information
+2026-11-03 17:54:58.006 [http-nio-8082-exec-7] DEBUG [user-service, traceId=4bf92f3577b34da6a3ce929d0e0e4736, spanId=967316ded51338f2, requestId=b25677e3-19b0-41a1-94ba-57f4b47275f0] com.storex.user.UserService - Returning in-memory tracing demo user
+2026-11-03 17:55:36.093 [http-nio-8082-exec-4] INFO  [user-service, traceId=6ae9bda84092e48ab158dc9a753eebed, spanId=b43772732fad7b34, requestId=f30941a1-7d18-457a-a91f-0be17db67f13] com.storex.user.UserController - Received user information request
+2026-11-03 17:55:36.094 [http-nio-8082-exec-4] DEBUG [user-service, traceId=6ae9bda84092e48ab158dc9a753eebed, spanId=b43772732fad7b34, requestId=f30941a1-7d18-457a-a91f-0be17db67f13] com.storex.user.UserController - Looking up tracing demo user
+2026-11-03 17:55:36.094 [http-nio-8082-exec-4] INFO  [user-service, traceId=6ae9bda84092e48ab158dc9a753eebed, spanId=a31e83c7f10f4ccb, requestId=f30941a1-7d18-457a-a91f-0be17db67f13] com.storex.user.UserService - Fetching user information
+2026-11-03 17:55:36.094 [http-nio-8082-exec-4] DEBUG [user-service, traceId=6ae9bda84092e48ab158dc9a753eebed, spanId=a31e83c7f10f4ccb, requestId=f30941a1-7d18-457a-a91f-0be17db67f13] com.storex.user.UserService - Returning in-memory tracing demo user
+2026-11-03 17:58:16.307 [http-nio-8082-exec-9] INFO  [user-service, traceId=6ae9be47e4f9f3430ba65db4b0997eb4, spanId=38ad100b419ac0eb, requestId=2f5e6efa-d753-4944-aea5-d6bc06e40667] com.storex.user.UserController - Received user information request
+2026-11-03 17:58:16.307 [http-nio-8082-exec-9] DEBUG [user-service, traceId=6ae9be47e4f9f3430ba65db4b0997eb4, spanId=38ad100b419ac0eb, requestId=2f5e6efa-d753-4944-aea5-d6bc06e40667] com.storex.user.UserController - Looking up tracing demo user
+2026-11-03 17:58:16.307 [http-nio-8082-exec-9] INFO  [user-service, traceId=6ae9be47e4f9f3430ba65db4b0997eb4, spanId=0e23f8c834e68414, requestId=2f5e6efa-d753-4944-aea5-d6bc06e40667] com.storex.user.UserService - Fetching user information
+2026-11-03 17:58:16.308 [http-nio-8082-exec-9] DEBUG [user-service, traceId=6ae9be47e4f9f3430ba65db4b0997eb4, spanId=0e23f8c834e68414, requestId=2f5e6efa-d753-4944-aea5-d6bc06e40667] com.storex.user.UserService - Returning in-memory tracing demo user
+2026-11-03 17:58:37.583 [http-nio-8082-exec-10] INFO  [user-service, traceId=4bf92f3577b34da6a3ce929d0e0e4736, spanId=9feafc6032cc9064, requestId=e6d46b85-349c-4b34-8d90-6181b6d7f0cf] com.storex.user.UserController - Received user information request
+2026-11-03 17:58:37.584 [http-nio-8082-exec-10] DEBUG [user-service, traceId=4bf92f3577b34da6a3ce929d0e0e4736, spanId=9feafc6032cc9064, requestId=e6d46b85-349c-4b34-8d90-6181b6d7f0cf] com.storex.user.UserController - Looking up tracing demo user
+2026-11-03 17:58:37.584 [http-nio-8082-exec-10] INFO  [user-service, traceId=4bf92f3577b34da6a3ce929d0e0e4736, spanId=f4e2894d9586e0ab, requestId=e6d46b85-349c-4b34-8d90-6181b6d7f0cf] com.storex.user.UserService - Fetching user information
+2026-11-03 17:58:37.584 [http-nio-8082-exec-10] DEBUG [user-service, traceId=4bf92f3577b34da6a3ce929d0e0e4736, spanId=f4e2894d9586e0ab, requestId=e6d46b85-349c-4b34-8d90-6181b6d7f0cf] com.storex.user.UserService - Returning in-memory tracing demo user
+2026-11-03 17:59:53.342 [main] INFO  [user-service, traceId=, spanId=, requestId=] com.storex.user.UserTracingTest - Starting UserTracingTest using Java 21.0.9 with PID 15200 (started by Laptop in C:\Users\Laptop\Music\Session18\distributed-tracing\user-service)
+2026-11-03 17:59:53.345 [main] DEBUG [user-service, traceId=, spanId=, requestId=] com.storex.user.UserTracingTest - Running with Spring Boot v3.5.7, Spring v6.2.12
+2026-11-03 17:59:53.347 [main] INFO  [user-service, traceId=, spanId=, requestId=] com.storex.user.UserTracingTest - No active profile set, falling back to 1 default profile: "default"
+2026-11-03 17:59:57.515 [main] DEBUG [user-service, traceId=, spanId=, requestId=] com.storex.user.RequestIdMdcFilter - Filter 'requestIdMdcFilter' configured for use
+2026-11-03 17:59:57.518 [main] INFO  [user-service, traceId=, spanId=, requestId=] o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2026-11-03 17:59:57.518 [main] INFO  [user-service, traceId=, spanId=, requestId=] o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2026-11-03 17:59:57.541 [main] INFO  [user-service, traceId=, spanId=, requestId=] o.s.b.a.e.web.EndpointLinksResolver - Exposing 2 endpoints beneath base path '/actuator'
+2026-11-03 17:59:57.564 [main] INFO  [user-service, traceId=, spanId=, requestId=] o.s.t.w.s.TestDispatcherServlet - Completed initialization in 45 ms
+2026-11-03 17:59:57.681 [main] INFO  [user-service, traceId=, spanId=, requestId=] com.storex.user.UserTracingTest - Started UserTracingTest in 5.658 seconds (process running for 8.162)
+2026-11-03 17:59:59.520 [main] INFO  [user-service, traceId=6ae9beafc1b82ae193b3ab60d951d46c, spanId=93b3ab60d951d46c, requestId=gateway-request-id] com.storex.user.UserController - Received user information request
+2026-11-03 17:59:59.521 [main] DEBUG [user-service, traceId=6ae9beafc1b82ae193b3ab60d951d46c, spanId=93b3ab60d951d46c, requestId=gateway-request-id] com.storex.user.UserController - Looking up tracing demo user
+2026-11-03 17:59:59.524 [main] INFO  [user-service, traceId=6ae9beafc1b82ae193b3ab60d951d46c, spanId=3650e1d1e3233c0a, requestId=gateway-request-id] com.storex.user.UserService - Fetching user information
+2026-11-03 17:59:59.525 [main] DEBUG [user-service, traceId=6ae9beafc1b82ae193b3ab60d951d46c, spanId=3650e1d1e3233c0a, requestId=gateway-request-id] com.storex.user.UserService - Returning in-memory tracing demo user
+2026-11-03 18:02:09.555 [main] INFO  [user-service, traceId=, spanId=, requestId=] com.storex.user.UserTracingTest - Starting UserTracingTest using Java 21.0.9 with PID 27364 (started by Laptop in C:\Users\Laptop\Music\Session18\distributed-tracing\user-service)
+2026-11-03 18:02:09.557 [main] DEBUG [user-service, traceId=, spanId=, requestId=] com.storex.user.UserTracingTest - Running with Spring Boot v3.5.7, Spring v6.2.12
+2026-11-03 18:02:09.559 [main] INFO  [user-service, traceId=, spanId=, requestId=] com.storex.user.UserTracingTest - No active profile set, falling back to 1 default profile: "default"
+2026-11-03 18:02:15.193 [main] DEBUG [user-service, traceId=, spanId=, requestId=] com.storex.user.RequestIdMdcFilter - Filter 'requestIdMdcFilter' configured for use
+2026-11-03 18:02:15.195 [main] INFO  [user-service, traceId=, spanId=, requestId=] o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2026-11-03 18:02:15.197 [main] INFO  [user-service, traceId=, spanId=, requestId=] o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2026-11-03 18:02:15.229 [main] INFO  [user-service, traceId=, spanId=, requestId=] o.s.b.a.e.web.EndpointLinksResolver - Exposing 2 endpoints beneath base path '/actuator'
+2026-11-03 18:02:15.253 [main] INFO  [user-service, traceId=, spanId=, requestId=] o.s.t.w.s.TestDispatcherServlet - Completed initialization in 55 ms
+2026-11-03 18:02:15.412 [main] INFO  [user-service, traceId=, spanId=, requestId=] com.storex.user.UserTracingTest - Started UserTracingTest in 7.128 seconds (process running for 8.666)
+2026-11-03 18:02:17.383 [main] INFO  [user-service, traceId=6ae9bf3937f6edd132815e351ba68782, spanId=32815e351ba68782, requestId=gateway-request-id] com.storex.user.UserController - Received user information request
+2026-11-03 18:02:17.384 [main] DEBUG [user-service, traceId=6ae9bf3937f6edd132815e351ba68782, spanId=32815e351ba68782, requestId=gateway-request-id] com.storex.user.UserController - Looking up tracing demo user
+2026-11-03 18:02:17.388 [main] INFO  [user-service, traceId=6ae9bf3937f6edd132815e351ba68782, spanId=7408adb5efbe52cb, requestId=gateway-request-id] com.storex.user.UserService - Fetching user information
+2026-11-03 18:02:17.389 [main] DEBUG [user-service, traceId=6ae9bf3937f6edd132815e351ba68782, spanId=7408adb5efbe52cb, requestId=gateway-request-id] com.storex.user.UserService - Returning in-memory tracing demo user
+2026-11-03 18:02:44.236 [main] INFO  [user-service, traceId=, spanId=, requestId=] c.storex.user.UserServiceApplication - Starting UserServiceApplication using Java 21.0.9 with PID 28716 (C:\Users\Laptop\Music\Session18\distributed-tracing\user-service\target\classes started by Laptop in C:\Users\Laptop\Music\Session18\distributed-tracing\user-service)
+2026-11-03 18:02:44.239 [main] DEBUG [user-service, traceId=, spanId=, requestId=] c.storex.user.UserServiceApplication - Running with Spring Boot v3.5.7, Spring v6.2.12
+2026-11-03 18:02:44.241 [main] INFO  [user-service, traceId=, spanId=, requestId=] c.storex.user.UserServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2026-11-03 18:02:46.666 [main] INFO  [user-service, traceId=, spanId=, requestId=] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8082 (http)
+2026-11-03 18:02:46.692 [main] INFO  [user-service, traceId=, spanId=, requestId=] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8082"]
+2026-11-03 18:02:46.695 [main] INFO  [user-service, traceId=, spanId=, requestId=] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-11-03 18:02:46.695 [main] INFO  [user-service, traceId=, spanId=, requestId=] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.48]
+2026-11-03 18:02:46.799 [main] INFO  [user-service, traceId=, spanId=, requestId=] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-11-03 18:02:46.800 [main] INFO  [user-service, traceId=, spanId=, requestId=] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2479 ms
+2026-11-03 18:02:47.142 [main] DEBUG [user-service, traceId=, spanId=, requestId=] com.storex.user.RequestIdMdcFilter - Filter 'requestIdMdcFilter' configured for use
+2026-11-03 18:02:47.958 [main] INFO  [user-service, traceId=, spanId=, requestId=] o.s.b.a.e.web.EndpointLinksResolver - Exposing 2 endpoints beneath base path '/actuator'
+2026-11-03 18:02:48.085 [main] INFO  [user-service, traceId=, spanId=, requestId=] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8082"]
+2026-11-03 18:02:48.105 [main] WARN  [user-service, traceId=, spanId=, requestId=] o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2026-11-03 18:02:48.152 [main] INFO  [user-service, traceId=, spanId=, requestId=] o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-11-03 18:02:48.197 [main] ERROR [user-service, traceId=, spanId=, requestId=] o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8082 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8082 or configure this application to listen on another port.
+
+2026-11-03 18:04:05.842 [main] INFO  [user-service, traceId=, spanId=, requestId=] c.storex.user.UserServiceApplication - Starting UserServiceApplication using Java 21.0.9 with PID 7848 (C:\Users\Laptop\Music\Session18\distributed-tracing\user-service\target\classes started by Laptop in C:\Users\Laptop\Music\Session18\distributed-tracing\user-service)
+2026-11-03 18:04:05.846 [main] DEBUG [user-service, traceId=, spanId=, requestId=] c.storex.user.UserServiceApplication - Running with Spring Boot v3.5.7, Spring v6.2.12
+2026-11-03 18:04:05.848 [main] INFO  [user-service, traceId=, spanId=, requestId=] c.storex.user.UserServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2026-11-03 18:04:08.199 [main] INFO  [user-service, traceId=, spanId=, requestId=] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8082 (http)
+2026-11-03 18:04:08.223 [main] INFO  [user-service, traceId=, spanId=, requestId=] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8082"]
+2026-11-03 18:04:08.226 [main] INFO  [user-service, traceId=, spanId=, requestId=] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-11-03 18:04:08.227 [main] INFO  [user-service, traceId=, spanId=, requestId=] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.48]
+2026-11-03 18:04:08.344 [main] INFO  [user-service, traceId=, spanId=, requestId=] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-11-03 18:04:08.345 [main] INFO  [user-service, traceId=, spanId=, requestId=] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2400 ms
+2026-11-03 18:04:08.705 [main] DEBUG [user-service, traceId=, spanId=, requestId=] com.storex.user.RequestIdMdcFilter - Filter 'requestIdMdcFilter' configured for use
+2026-11-03 18:04:09.361 [main] INFO  [user-service, traceId=, spanId=, requestId=] o.s.b.a.e.web.EndpointLinksResolver - Exposing 2 endpoints beneath base path '/actuator'
+2026-11-03 18:04:09.421 [main] INFO  [user-service, traceId=, spanId=, requestId=] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8082"]
+2026-11-03 18:04:09.435 [main] WARN  [user-service, traceId=, spanId=, requestId=] o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2026-11-03 18:04:09.465 [main] INFO  [user-service, traceId=, spanId=, requestId=] o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-11-03 18:04:09.490 [main] ERROR [user-service, traceId=, spanId=, requestId=] o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8082 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8082 or configure this application to listen on another port.
+
+2026-11-03 18:05:23.128 [main] INFO  [user-service, traceId=, spanId=, requestId=] c.storex.user.UserServiceApplication - Starting UserServiceApplication using Java 21.0.9 with PID 21580 (C:\Users\Laptop\Music\Session18\distributed-tracing\user-service\target\classes started by Laptop in C:\Users\Laptop\Music\Session18\distributed-tracing\user-service)
+2026-11-03 18:05:23.131 [main] DEBUG [user-service, traceId=, spanId=, requestId=] c.storex.user.UserServiceApplication - Running with Spring Boot v3.5.7, Spring v6.2.12
+2026-11-03 18:05:23.133 [main] INFO  [user-service, traceId=, spanId=, requestId=] c.storex.user.UserServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2026-11-03 18:05:26.121 [main] INFO  [user-service, traceId=, spanId=, requestId=] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 28082 (http)
+2026-11-03 18:05:26.144 [main] INFO  [user-service, traceId=, spanId=, requestId=] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-28082"]
+2026-11-03 18:05:26.149 [main] INFO  [user-service, traceId=, spanId=, requestId=] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-11-03 18:05:26.150 [main] INFO  [user-service, traceId=, spanId=, requestId=] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.48]
+2026-11-03 18:05:26.266 [main] INFO  [user-service, traceId=, spanId=, requestId=] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-11-03 18:05:26.267 [main] INFO  [user-service, traceId=, spanId=, requestId=] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3011 ms
+2026-11-03 18:05:26.632 [main] DEBUG [user-service, traceId=, spanId=, requestId=] com.storex.user.RequestIdMdcFilter - Filter 'requestIdMdcFilter' configured for use
+2026-11-03 18:05:27.333 [main] INFO  [user-service, traceId=, spanId=, requestId=] o.s.b.a.e.web.EndpointLinksResolver - Exposing 2 endpoints beneath base path '/actuator'
+2026-11-03 18:05:27.407 [main] INFO  [user-service, traceId=, spanId=, requestId=] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-28082"]
+2026-11-03 18:05:27.449 [main] INFO  [user-service, traceId=, spanId=, requestId=] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 28082 (http) with context path '/'
+2026-11-03 18:05:27.483 [main] INFO  [user-service, traceId=, spanId=, requestId=] c.storex.user.UserServiceApplication - Started UserServiceApplication in 5.642 seconds (process running for 6.59)
+2026-11-03 18:06:24.260 [http-nio-28082-exec-1] INFO  [user-service, traceId=, spanId=, requestId=] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-11-03 18:06:24.261 [http-nio-28082-exec-1] INFO  [user-service, traceId=, spanId=, requestId=] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-11-03 18:06:24.263 [http-nio-28082-exec-1] INFO  [user-service, traceId=, spanId=, requestId=] o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2026-11-03 18:06:24.343 [http-nio-28082-exec-1] INFO  [user-service, traceId=4bf92f3577b34da6a3ce929d0e0e4736, spanId=5b3e2dfa248abbe1, requestId=9b57f3d8-59e9-44a7-85f1-5f6c3c606438] com.storex.user.UserController - Received user information request
+2026-11-03 18:06:24.343 [http-nio-28082-exec-1] DEBUG [user-service, traceId=4bf92f3577b34da6a3ce929d0e0e4736, spanId=5b3e2dfa248abbe1, requestId=9b57f3d8-59e9-44a7-85f1-5f6c3c606438] com.storex.user.UserController - Looking up tracing demo user
+2026-11-03 18:06:24.344 [http-nio-28082-exec-1] INFO  [user-service, traceId=4bf92f3577b34da6a3ce929d0e0e4736, spanId=446a9e30ddd4c5f6, requestId=9b57f3d8-59e9-44a7-85f1-5f6c3c606438] com.storex.user.UserService - Fetching user information
+2026-11-03 18:06:24.345 [http-nio-28082-exec-1] DEBUG [user-service, traceId=4bf92f3577b34da6a3ce929d0e0e4736, spanId=446a9e30ddd4c5f6, requestId=9b57f3d8-59e9-44a7-85f1-5f6c3c606438] com.storex.user.UserService - Returning in-memory tracing demo user
+2026-11-03 18:06:44.291 [http-nio-28082-exec-2] INFO  [user-service, traceId=6ae9c0448e1834e65142a4697ba7d293, spanId=c2e86fda09ebebe3, requestId=2da282e7-235d-4243-b5fa-76e57558ff08] com.storex.user.UserController - Received user information request
+2026-11-03 18:06:44.291 [http-nio-28082-exec-2] DEBUG [user-service, traceId=6ae9c0448e1834e65142a4697ba7d293, spanId=c2e86fda09ebebe3, requestId=2da282e7-235d-4243-b5fa-76e57558ff08] com.storex.user.UserController - Looking up tracing demo user
+2026-11-03 18:06:44.291 [http-nio-28082-exec-2] INFO  [user-service, traceId=6ae9c0448e1834e65142a4697ba7d293, spanId=dfc216b396d7a071, requestId=2da282e7-235d-4243-b5fa-76e57558ff08] com.storex.user.UserService - Fetching user information
+2026-11-03 18:06:44.291 [http-nio-28082-exec-2] DEBUG [user-service, traceId=6ae9c0448e1834e65142a4697ba7d293, spanId=dfc216b396d7a071, requestId=2da282e7-235d-4243-b5fa-76e57558ff08] com.storex.user.UserService - Returning in-memory tracing demo user
+2026-11-03 18:09:15.811 [main] INFO  [user-service, traceId=, spanId=, requestId=] com.storex.user.UserTracingTest - Starting UserTracingTest using Java 21.0.9 with PID 27704 (started by Laptop in C:\Users\Laptop\Music\Session18\distributed-tracing\user-service)
+2026-11-03 18:09:15.812 [main] DEBUG [user-service, traceId=, spanId=, requestId=] com.storex.user.UserTracingTest - Running with Spring Boot v3.5.7, Spring v6.2.12
+2026-11-03 18:09:15.812 [main] INFO  [user-service, traceId=, spanId=, requestId=] com.storex.user.UserTracingTest - No active profile set, falling back to 1 default profile: "default"
+2026-11-03 18:09:20.079 [main] DEBUG [user-service, traceId=, spanId=, requestId=] com.storex.user.RequestIdMdcFilter - Filter 'requestIdMdcFilter' configured for use
+2026-11-03 18:09:20.083 [main] INFO  [user-service, traceId=, spanId=, requestId=] o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2026-11-03 18:09:20.084 [main] INFO  [user-service, traceId=, spanId=, requestId=] o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2026-11-03 18:09:20.114 [main] INFO  [user-service, traceId=, spanId=, requestId=] o.s.b.a.e.web.EndpointLinksResolver - Exposing 2 endpoints beneath base path '/actuator'
+2026-11-03 18:09:20.138 [main] INFO  [user-service, traceId=, spanId=, requestId=] o.s.t.w.s.TestDispatcherServlet - Completed initialization in 54 ms
+2026-11-03 18:09:20.462 [main] INFO  [user-service, traceId=, spanId=, requestId=] com.storex.user.UserTracingTest - Started UserTracingTest in 5.431 seconds (process running for 6.872)
+2026-11-03 18:09:22.872 [main] INFO  [user-service, traceId=6ae9c0e23a9e50b199a9e8574c017ab4, spanId=99a9e8574c017ab4, requestId=gateway-request-id] com.storex.user.UserController - Received user information request
+2026-11-03 18:09:22.873 [main] DEBUG [user-service, traceId=6ae9c0e23a9e50b199a9e8574c017ab4, spanId=99a9e8574c017ab4, requestId=gateway-request-id] com.storex.user.UserController - Looking up tracing demo user
+2026-11-03 18:09:22.874 [main] INFO  [user-service, traceId=6ae9c0e23a9e50b199a9e8574c017ab4, spanId=a938b61f04cc5f27, requestId=gateway-request-id] com.storex.user.UserService - Fetching user information
+2026-11-03 18:09:22.876 [main] DEBUG [user-service, traceId=6ae9c0e23a9e50b199a9e8574c017ab4, spanId=a938b61f04cc5f27, requestId=gateway-request-id] com.storex.user.UserService - Returning in-memory tracing demo user
+2026-11-03 18:10:04.592 [main] INFO  [user-service, traceId=, spanId=, requestId=] c.storex.user.UserServiceApplication - Starting UserServiceApplication using Java 21.0.9 with PID 31832 (C:\Users\Laptop\Music\Session18\distributed-tracing\user-service\target\classes started by Laptop in C:\Users\Laptop\Music\Session18\distributed-tracing\user-service)
+2026-11-03 18:10:04.597 [main] DEBUG [user-service, traceId=, spanId=, requestId=] c.storex.user.UserServiceApplication - Running with Spring Boot v3.5.7, Spring v6.2.12
+2026-11-03 18:10:04.599 [main] INFO  [user-service, traceId=, spanId=, requestId=] c.storex.user.UserServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2026-11-03 18:10:07.347 [main] INFO  [user-service, traceId=, spanId=, requestId=] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 28082 (http)
+2026-11-03 18:10:07.374 [main] INFO  [user-service, traceId=, spanId=, requestId=] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-28082"]
+2026-11-03 18:10:07.380 [main] INFO  [user-service, traceId=, spanId=, requestId=] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-11-03 18:10:07.381 [main] INFO  [user-service, traceId=, spanId=, requestId=] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.48]
+2026-11-03 18:10:07.505 [main] INFO  [user-service, traceId=, spanId=, requestId=] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-11-03 18:10:07.506 [main] INFO  [user-service, traceId=, spanId=, requestId=] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2801 ms
+2026-11-03 18:10:07.916 [main] DEBUG [user-service, traceId=, spanId=, requestId=] com.storex.user.RequestIdMdcFilter - Filter 'requestIdMdcFilter' configured for use
+2026-11-03 18:10:08.959 [main] INFO  [user-service, traceId=, spanId=, requestId=] o.s.b.a.e.web.EndpointLinksResolver - Exposing 2 endpoints beneath base path '/actuator'
+2026-11-03 18:10:09.069 [main] INFO  [user-service, traceId=, spanId=, requestId=] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-28082"]
+2026-11-03 18:10:09.132 [main] INFO  [user-service, traceId=, spanId=, requestId=] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 28082 (http) with context path '/'
+2026-11-03 18:10:09.163 [main] INFO  [user-service, traceId=, spanId=, requestId=] c.storex.user.UserServiceApplication - Started UserServiceApplication in 5.908 seconds (process running for 6.71)
+2026-11-03 18:10:43.702 [http-nio-28082-exec-1] INFO  [user-service, traceId=, spanId=, requestId=] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-11-03 18:10:43.703 [http-nio-28082-exec-1] INFO  [user-service, traceId=, spanId=, requestId=] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-11-03 18:10:43.704 [http-nio-28082-exec-1] INFO  [user-service, traceId=, spanId=, requestId=] o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2026-11-03 18:10:43.761 [http-nio-28082-exec-1] INFO  [user-service, traceId=6ae9c1339354d58698409f15d5143d13, spanId=b8e43dc6fd66e50d, requestId=59eda2a1-f7c1-48ec-88c9-228de813baa0] com.storex.user.UserController - Received user information request
+2026-11-03 18:10:43.761 [http-nio-28082-exec-1] DEBUG [user-service, traceId=6ae9c1339354d58698409f15d5143d13, spanId=b8e43dc6fd66e50d, requestId=59eda2a1-f7c1-48ec-88c9-228de813baa0] com.storex.user.UserController - Looking up tracing demo user
+2026-11-03 18:10:43.762 [http-nio-28082-exec-1] INFO  [user-service, traceId=6ae9c1339354d58698409f15d5143d13, spanId=81bc8f32109b2040, requestId=59eda2a1-f7c1-48ec-88c9-228de813baa0] com.storex.user.UserService - Fetching user information
+2026-11-03 18:10:43.763 [http-nio-28082-exec-1] DEBUG [user-service, traceId=6ae9c1339354d58698409f15d5143d13, spanId=81bc8f32109b2040, requestId=59eda2a1-f7c1-48ec-88c9-228de813baa0] com.storex.user.UserService - Returning in-memory tracing demo user
+2026-11-03 18:10:44.036 [http-nio-28082-exec-2] INFO  [user-service, traceId=6ae9c1342d6d936df44a62f0f59551a7, spanId=68b370fd33de14a3, requestId=eab3af63-1379-4888-84de-4ff91095181b] com.storex.user.UserController - Received user information request
+2026-11-03 18:10:44.037 [http-nio-28082-exec-2] DEBUG [user-service, traceId=6ae9c1342d6d936df44a62f0f59551a7, spanId=68b370fd33de14a3, requestId=eab3af63-1379-4888-84de-4ff91095181b] com.storex.user.UserController - Looking up tracing demo user
+2026-11-03 18:10:44.037 [http-nio-28082-exec-2] INFO  [user-service, traceId=6ae9c1342d6d936df44a62f0f59551a7, spanId=d4fd1c58e2dcb227, requestId=eab3af63-1379-4888-84de-4ff91095181b] com.storex.user.UserService - Fetching user information
+2026-11-03 18:10:44.037 [http-nio-28082-exec-2] DEBUG [user-service, traceId=6ae9c1342d6d936df44a62f0f59551a7, spanId=d4fd1c58e2dcb227, requestId=eab3af63-1379-4888-84de-4ff91095181b] com.storex.user.UserService - Returning in-memory tracing demo user
+2026-11-03 18:11:59.733 [main] INFO  [user-service, traceId=, spanId=, requestId=] c.storex.user.UserServiceApplication - Starting UserServiceApplication using Java 21.0.9 with PID 25400 (C:\Users\Laptop\Music\Session18\distributed-tracing\user-service\target\classes started by Laptop in C:\Users\Laptop\Music\Session18\distributed-tracing\user-service)
+2026-11-03 18:11:59.739 [main] DEBUG [user-service, traceId=, spanId=, requestId=] c.storex.user.UserServiceApplication - Running with Spring Boot v3.5.7, Spring v6.2.12
+2026-11-03 18:11:59.742 [main] INFO  [user-service, traceId=, spanId=, requestId=] c.storex.user.UserServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2026-11-03 18:12:02.956 [main] INFO  [user-service, traceId=, spanId=, requestId=] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 28082 (http)
+2026-11-03 18:12:02.984 [main] INFO  [user-service, traceId=, spanId=, requestId=] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-28082"]
+2026-11-03 18:12:02.990 [main] INFO  [user-service, traceId=, spanId=, requestId=] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-11-03 18:12:02.991 [main] INFO  [user-service, traceId=, spanId=, requestId=] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.48]
+2026-11-03 18:12:03.286 [main] INFO  [user-service, traceId=, spanId=, requestId=] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-11-03 18:12:03.287 [main] INFO  [user-service, traceId=, spanId=, requestId=] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3401 ms
+2026-11-03 18:12:03.692 [main] DEBUG [user-service, traceId=, spanId=, requestId=] com.storex.user.RequestIdMdcFilter - Filter 'requestIdMdcFilter' configured for use
+2026-11-03 18:12:04.493 [main] INFO  [user-service, traceId=, spanId=, requestId=] o.s.b.a.e.web.EndpointLinksResolver - Exposing 2 endpoints beneath base path '/actuator'
+2026-11-03 18:12:04.579 [main] INFO  [user-service, traceId=, spanId=, requestId=] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-28082"]
+2026-11-03 18:12:04.629 [main] INFO  [user-service, traceId=, spanId=, requestId=] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 28082 (http) with context path '/'
+2026-11-03 18:12:04.657 [main] INFO  [user-service, traceId=, spanId=, requestId=] c.storex.user.UserServiceApplication - Started UserServiceApplication in 7.09 seconds (process running for 8.591)
+2026-11-03 18:12:37.125 [http-nio-28082-exec-1] INFO  [user-service, traceId=, spanId=, requestId=] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-11-03 18:12:37.126 [http-nio-28082-exec-1] INFO  [user-service, traceId=, spanId=, requestId=] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-11-03 18:12:37.128 [http-nio-28082-exec-1] INFO  [user-service, traceId=, spanId=, requestId=] o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2026-11-03 18:12:37.248 [http-nio-28082-exec-1] INFO  [user-service, traceId=6ae9c1a45dcd67eac3b358d14b3d19b2, spanId=715cce9461fdda26, requestId=736ac16d-8575-4992-a855-9c2ad43e0e31] com.storex.user.UserController - Received user information request
+2026-11-03 18:12:37.248 [http-nio-28082-exec-1] DEBUG [user-service, traceId=6ae9c1a45dcd67eac3b358d14b3d19b2, spanId=715cce9461fdda26, requestId=736ac16d-8575-4992-a855-9c2ad43e0e31] com.storex.user.UserController - Looking up tracing demo user
+2026-11-03 18:12:37.258 [http-nio-28082-exec-1] INFO  [user-service, traceId=6ae9c1a45dcd67eac3b358d14b3d19b2, spanId=5b01267664c1c676, requestId=736ac16d-8575-4992-a855-9c2ad43e0e31] com.storex.user.UserService - Fetching user information
+2026-11-03 18:12:37.258 [http-nio-28082-exec-1] DEBUG [user-service, traceId=6ae9c1a45dcd67eac3b358d14b3d19b2, spanId=5b01267664c1c676, requestId=736ac16d-8575-4992-a855-9c2ad43e0e31] com.storex.user.UserService - Returning in-memory tracing demo user
+2026-11-03 18:12:37.946 [http-nio-28082-exec-2] INFO  [user-service, traceId=6ae9c1a5105059820b7fe68d4b27e518, spanId=3e064e0e41dd10e7, requestId=1fbfb278-8ba2-4113-84f1-a84bffdbdf80] com.storex.user.UserController - Received user information request
+2026-11-03 18:12:37.947 [http-nio-28082-exec-2] DEBUG [user-service, traceId=6ae9c1a5105059820b7fe68d4b27e518, spanId=3e064e0e41dd10e7, requestId=1fbfb278-8ba2-4113-84f1-a84bffdbdf80] com.storex.user.UserController - Looking up tracing demo user
+2026-11-03 18:12:37.947 [http-nio-28082-exec-2] INFO  [user-service, traceId=6ae9c1a5105059820b7fe68d4b27e518, spanId=759c82a49d4677dd, requestId=1fbfb278-8ba2-4113-84f1-a84bffdbdf80] com.storex.user.UserService - Fetching user information
+2026-11-03 18:12:37.947 [http-nio-28082-exec-2] DEBUG [user-service, traceId=6ae9c1a5105059820b7fe68d4b27e518, spanId=759c82a49d4677dd, requestId=1fbfb278-8ba2-4113-84f1-a84bffdbdf80] com.storex.user.UserService - Returning in-memory tracing demo user
+2026-11-03 18:14:48.711 [main] INFO  [user-service, traceId=, spanId=, requestId=] c.storex.user.UserServiceApplication - Starting UserServiceApplication using Java 21.0.9 with PID 31636 (C:\Users\Laptop\Music\Session18\distributed-tracing\user-service\target\classes started by Laptop in C:\Users\Laptop\Music\Session18\distributed-tracing\user-service)
+2026-11-03 18:14:48.716 [main] DEBUG [user-service, traceId=, spanId=, requestId=] c.storex.user.UserServiceApplication - Running with Spring Boot v3.5.7, Spring v6.2.12
+2026-11-03 18:14:48.717 [main] INFO  [user-service, traceId=, spanId=, requestId=] c.storex.user.UserServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2026-11-03 18:14:52.009 [main] INFO  [user-service, traceId=, spanId=, requestId=] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 28082 (http)
+2026-11-03 18:14:52.062 [main] INFO  [user-service, traceId=, spanId=, requestId=] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-28082"]
+2026-11-03 18:14:52.068 [main] INFO  [user-service, traceId=, spanId=, requestId=] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-11-03 18:14:52.069 [main] INFO  [user-service, traceId=, spanId=, requestId=] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.48]
+2026-11-03 18:14:52.225 [main] INFO  [user-service, traceId=, spanId=, requestId=] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-11-03 18:14:52.226 [main] INFO  [user-service, traceId=, spanId=, requestId=] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3382 ms
+2026-11-03 18:14:52.721 [main] DEBUG [user-service, traceId=, spanId=, requestId=] com.storex.user.RequestIdMdcFilter - Filter 'requestIdMdcFilter' configured for use
+2026-11-03 18:14:53.686 [main] INFO  [user-service, traceId=, spanId=, requestId=] o.s.b.a.e.web.EndpointLinksResolver - Exposing 2 endpoints beneath base path '/actuator'
+2026-11-03 18:14:53.806 [main] INFO  [user-service, traceId=, spanId=, requestId=] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-28082"]
+2026-11-03 18:14:53.875 [main] INFO  [user-service, traceId=, spanId=, requestId=] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 28082 (http) with context path '/'
+2026-11-03 18:14:53.908 [main] INFO  [user-service, traceId=, spanId=, requestId=] c.storex.user.UserServiceApplication - Started UserServiceApplication in 7.412 seconds (process running for 8.52)
+2026-11-03 18:16:05.770 [main] INFO  [user-service, traceId=, spanId=, requestId=] c.storex.user.UserServiceApplication - Starting UserServiceApplication using Java 21.0.9 with PID 17212 (C:\Users\Laptop\Music\Session18\distributed-tracing\user-service\target\classes started by Laptop in C:\Users\Laptop\Music\Session18\distributed-tracing\user-service)
+2026-11-03 18:16:05.776 [main] DEBUG [user-service, traceId=, spanId=, requestId=] c.storex.user.UserServiceApplication - Running with Spring Boot v3.5.7, Spring v6.2.12
+2026-11-03 18:16:05.779 [main] INFO  [user-service, traceId=, spanId=, requestId=] c.storex.user.UserServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2026-11-03 18:16:08.693 [main] INFO  [user-service, traceId=, spanId=, requestId=] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 28082 (http)
+2026-11-03 18:16:08.734 [main] INFO  [user-service, traceId=, spanId=, requestId=] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-28082"]
+2026-11-03 18:16:08.741 [main] INFO  [user-service, traceId=, spanId=, requestId=] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-11-03 18:16:08.742 [main] INFO  [user-service, traceId=, spanId=, requestId=] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.48]
+2026-11-03 18:16:08.872 [main] INFO  [user-service, traceId=, spanId=, requestId=] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-11-03 18:16:08.873 [main] INFO  [user-service, traceId=, spanId=, requestId=] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2948 ms
+2026-11-03 18:16:09.330 [main] DEBUG [user-service, traceId=, spanId=, requestId=] com.storex.user.RequestIdMdcFilter - Filter 'requestIdMdcFilter' configured for use
+2026-11-03 18:16:10.137 [main] INFO  [user-service, traceId=, spanId=, requestId=] o.s.b.a.e.web.EndpointLinksResolver - Exposing 2 endpoints beneath base path '/actuator'
+2026-11-03 18:16:10.224 [main] INFO  [user-service, traceId=, spanId=, requestId=] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-28082"]
+2026-11-03 18:16:10.275 [main] INFO  [user-service, traceId=, spanId=, requestId=] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 28082 (http) with context path '/'
+2026-11-03 18:16:10.298 [main] INFO  [user-service, traceId=, spanId=, requestId=] c.storex.user.UserServiceApplication - Started UserServiceApplication in 6.267 seconds (process running for 7.193)
+2026-11-03 18:16:48.166 [http-nio-28082-exec-1] INFO  [user-service, traceId=, spanId=, requestId=] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-11-03 18:16:48.167 [http-nio-28082-exec-1] INFO  [user-service, traceId=, spanId=, requestId=] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-11-03 18:16:48.169 [http-nio-28082-exec-1] INFO  [user-service, traceId=, spanId=, requestId=] o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2026-11-03 18:16:48.243 [http-nio-28082-exec-1] INFO  [user-service, traceId=6ae9c29f9499e95bf220919e0f300e57, spanId=cf8501e9d316dbb6, requestId=3f5cbabe-72ba-42f9-a99a-db49ccf7a623] com.storex.user.UserController - Received user information request
+2026-11-03 18:16:48.243 [http-nio-28082-exec-1] DEBUG [user-service, traceId=6ae9c29f9499e95bf220919e0f300e57, spanId=cf8501e9d316dbb6, requestId=3f5cbabe-72ba-42f9-a99a-db49ccf7a623] com.storex.user.UserController - Looking up tracing demo user
+2026-11-03 18:16:48.245 [http-nio-28082-exec-1] INFO  [user-service, traceId=6ae9c29f9499e95bf220919e0f300e57, spanId=b05711ecf710cfa1, requestId=3f5cbabe-72ba-42f9-a99a-db49ccf7a623] com.storex.user.UserService - Fetching user information
+2026-11-03 18:16:48.245 [http-nio-28082-exec-1] DEBUG [user-service, traceId=6ae9c29f9499e95bf220919e0f300e57, spanId=b05711ecf710cfa1, requestId=3f5cbabe-72ba-42f9-a99a-db49ccf7a623] com.storex.user.UserService - Returning in-memory tracing demo user
+2026-11-03 18:17:32.889 [main] INFO  [user-service, traceId=, spanId=, requestId=] c.storex.user.UserServiceApplication - Starting UserServiceApplication using Java 21.0.9 with PID 2368 (C:\Users\Laptop\Music\Session18\distributed-tracing\user-service\target\classes started by Laptop in C:\Users\Laptop\Music\Session18\distributed-tracing\user-service)
+2026-11-03 18:17:32.894 [main] DEBUG [user-service, traceId=, spanId=, requestId=] c.storex.user.UserServiceApplication - Running with Spring Boot v3.5.7, Spring v6.2.12
+2026-11-03 18:17:32.896 [main] INFO  [user-service, traceId=, spanId=, requestId=] c.storex.user.UserServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2026-11-03 18:17:35.315 [main] INFO  [user-service, traceId=, spanId=, requestId=] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 28082 (http)
+2026-11-03 18:17:35.347 [main] INFO  [user-service, traceId=, spanId=, requestId=] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-28082"]
+2026-11-03 18:17:35.353 [main] INFO  [user-service, traceId=, spanId=, requestId=] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-11-03 18:17:35.354 [main] INFO  [user-service, traceId=, spanId=, requestId=] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.48]
+2026-11-03 18:17:35.513 [main] INFO  [user-service, traceId=, spanId=, requestId=] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-11-03 18:17:35.515 [main] INFO  [user-service, traceId=, spanId=, requestId=] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2515 ms
+2026-11-03 18:17:35.995 [main] DEBUG [user-service, traceId=, spanId=, requestId=] com.storex.user.RequestIdMdcFilter - Filter 'requestIdMdcFilter' configured for use
+2026-11-03 18:17:37.197 [main] INFO  [user-service, traceId=, spanId=, requestId=] o.s.b.a.e.web.EndpointLinksResolver - Exposing 2 endpoints beneath base path '/actuator'
+2026-11-03 18:17:37.331 [main] INFO  [user-service, traceId=, spanId=, requestId=] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-28082"]
+2026-11-03 18:17:37.402 [main] INFO  [user-service, traceId=, spanId=, requestId=] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 28082 (http) with context path '/'
+2026-11-03 18:17:37.436 [main] INFO  [user-service, traceId=, spanId=, requestId=] c.storex.user.UserServiceApplication - Started UserServiceApplication in 5.97 seconds (process running for 6.846)
+2026-11-03 18:18:12.965 [http-nio-28082-exec-1] INFO  [user-service, traceId=, spanId=, requestId=] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-11-03 18:18:12.965 [http-nio-28082-exec-1] INFO  [user-service, traceId=, spanId=, requestId=] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-11-03 18:18:12.966 [http-nio-28082-exec-1] INFO  [user-service, traceId=, spanId=, requestId=] o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2026-11-03 18:18:13.055 [http-nio-28082-exec-1] INFO  [user-service, traceId=6ae9c2f4e3b2002962b68d6fc1de6997, spanId=d986704f2186aa8f, requestId=d64a9e1e-ae96-4919-82f2-7ce5424b6f19] com.storex.user.UserController - Received user information request
+2026-11-03 18:18:13.055 [http-nio-28082-exec-1] DEBUG [user-service, traceId=6ae9c2f4e3b2002962b68d6fc1de6997, spanId=d986704f2186aa8f, requestId=d64a9e1e-ae96-4919-82f2-7ce5424b6f19] com.storex.user.UserController - Looking up tracing demo user
+2026-11-03 18:18:13.057 [http-nio-28082-exec-1] INFO  [user-service, traceId=6ae9c2f4e3b2002962b68d6fc1de6997, spanId=007059246ea93913, requestId=d64a9e1e-ae96-4919-82f2-7ce5424b6f19] com.storex.user.UserService - Fetching user information
+2026-11-03 18:18:13.059 [http-nio-28082-exec-1] DEBUG [user-service, traceId=6ae9c2f4e3b2002962b68d6fc1de6997, spanId=007059246ea93913, requestId=d64a9e1e-ae96-4919-82f2-7ce5424b6f19] com.storex.user.UserService - Returning in-memory tracing demo user
+2026-11-03 18:19:07.435 [main] INFO  [user-service, traceId=, spanId=, requestId=] c.storex.user.UserServiceApplication - Starting UserServiceApplication using Java 21.0.9 with PID 7712 (C:\Users\Laptop\Music\Session18\distributed-tracing\user-service\target\classes started by Laptop in C:\Users\Laptop\Music\Session18\distributed-tracing\user-service)
+2026-11-03 18:19:07.440 [main] DEBUG [user-service, traceId=, spanId=, requestId=] c.storex.user.UserServiceApplication - Running with Spring Boot v3.5.7, Spring v6.2.12
+2026-11-03 18:19:07.442 [main] INFO  [user-service, traceId=, spanId=, requestId=] c.storex.user.UserServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2026-11-03 18:19:09.965 [main] INFO  [user-service, traceId=, spanId=, requestId=] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 28082 (http)
+2026-11-03 18:19:09.993 [main] INFO  [user-service, traceId=, spanId=, requestId=] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-28082"]
+2026-11-03 18:19:09.998 [main] INFO  [user-service, traceId=, spanId=, requestId=] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-11-03 18:19:10.000 [main] INFO  [user-service, traceId=, spanId=, requestId=] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.48]
+2026-11-03 18:19:10.144 [main] INFO  [user-service, traceId=, spanId=, requestId=] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-11-03 18:19:10.145 [main] INFO  [user-service, traceId=, spanId=, requestId=] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2593 ms
+2026-11-03 18:19:10.576 [main] DEBUG [user-service, traceId=, spanId=, requestId=] com.storex.user.RequestIdMdcFilter - Filter 'requestIdMdcFilter' configured for use
+2026-11-03 18:19:11.464 [main] INFO  [user-service, traceId=, spanId=, requestId=] o.s.b.a.e.web.EndpointLinksResolver - Exposing 2 endpoints beneath base path '/actuator'
+2026-11-03 18:19:11.559 [main] INFO  [user-service, traceId=, spanId=, requestId=] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-28082"]
+2026-11-03 18:19:11.607 [main] INFO  [user-service, traceId=, spanId=, requestId=] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 28082 (http) with context path '/'
+2026-11-03 18:19:11.633 [main] INFO  [user-service, traceId=, spanId=, requestId=] c.storex.user.UserServiceApplication - Started UserServiceApplication in 5.685 seconds (process running for 6.351)
+2026-11-03 18:20:14.745 [http-nio-28082-exec-1] INFO  [user-service, traceId=, spanId=, requestId=] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-11-03 18:20:14.746 [http-nio-28082-exec-1] INFO  [user-service, traceId=, spanId=, requestId=] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-11-03 18:20:14.748 [http-nio-28082-exec-1] INFO  [user-service, traceId=, spanId=, requestId=] o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2026-11-03 18:20:14.844 [http-nio-28082-exec-1] INFO  [user-service, traceId=4bf92f3577b34da6a3ce929d0e0e4736, spanId=8d452aa7c7ce97b2, requestId=1937b3e4-4fe8-4a9f-bd8b-c3237d8a3241] com.storex.user.UserController - Received user information request
+2026-11-03 18:20:14.845 [http-nio-28082-exec-1] DEBUG [user-service, traceId=4bf92f3577b34da6a3ce929d0e0e4736, spanId=8d452aa7c7ce97b2, requestId=1937b3e4-4fe8-4a9f-bd8b-c3237d8a3241] com.storex.user.UserController - Looking up tracing demo user
+2026-11-03 18:20:14.847 [http-nio-28082-exec-1] INFO  [user-service, traceId=4bf92f3577b34da6a3ce929d0e0e4736, spanId=58fbb856631a65fd, requestId=1937b3e4-4fe8-4a9f-bd8b-c3237d8a3241] com.storex.user.UserService - Fetching user information
+2026-11-03 18:20:14.847 [http-nio-28082-exec-1] DEBUG [user-service, traceId=4bf92f3577b34da6a3ce929d0e0e4736, spanId=58fbb856631a65fd, requestId=1937b3e4-4fe8-4a9f-bd8b-c3237d8a3241] com.storex.user.UserService - Returning in-memory tracing demo user
+2026-11-03 18:20:15.537 [http-nio-28082-exec-2] INFO  [user-service, traceId=6ae9c36f4aa3b8b485f5790e98e20bc8, spanId=95824880c406ae5b, requestId=d026eaa1-8a63-4577-aa00-a8d2ebdfd869] com.storex.user.UserController - Received user information request
+2026-11-03 18:20:15.537 [http-nio-28082-exec-2] DEBUG [user-service, traceId=6ae9c36f4aa3b8b485f5790e98e20bc8, spanId=95824880c406ae5b, requestId=d026eaa1-8a63-4577-aa00-a8d2ebdfd869] com.storex.user.UserController - Looking up tracing demo user
+2026-11-03 18:20:15.537 [http-nio-28082-exec-2] INFO  [user-service, traceId=6ae9c36f4aa3b8b485f5790e98e20bc8, spanId=34e1f79ded6526c3, requestId=d026eaa1-8a63-4577-aa00-a8d2ebdfd869] com.storex.user.UserService - Fetching user information
+2026-11-03 18:20:15.537 [http-nio-28082-exec-2] DEBUG [user-service, traceId=6ae9c36f4aa3b8b485f5790e98e20bc8, spanId=34e1f79ded6526c3, requestId=d026eaa1-8a63-4577-aa00-a8d2ebdfd869] com.storex.user.UserService - Returning in-memory tracing demo user
+2026-11-03 18:21:24.306 [main] INFO  [user-service, traceId=, spanId=, requestId=] com.storex.user.UserTracingTest - Starting UserTracingTest using Java 21.0.9 with PID 7600 (started by Laptop in C:\Users\Laptop\Music\Session18\distributed-tracing\user-service)
+2026-11-03 18:21:24.309 [main] DEBUG [user-service, traceId=, spanId=, requestId=] com.storex.user.UserTracingTest - Running with Spring Boot v3.5.7, Spring v6.2.12
+2026-11-03 18:21:24.319 [main] INFO  [user-service, traceId=, spanId=, requestId=] com.storex.user.UserTracingTest - No active profile set, falling back to 1 default profile: "default"
+2026-11-03 18:21:29.928 [main] DEBUG [user-service, traceId=, spanId=, requestId=] com.storex.user.RequestIdMdcFilter - Filter 'requestIdMdcFilter' configured for use
+2026-11-03 18:21:29.930 [main] INFO  [user-service, traceId=, spanId=, requestId=] o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2026-11-03 18:21:29.931 [main] INFO  [user-service, traceId=, spanId=, requestId=] o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2026-11-03 18:21:29.964 [main] INFO  [user-service, traceId=, spanId=, requestId=] o.s.b.a.e.web.EndpointLinksResolver - Exposing 2 endpoints beneath base path '/actuator'
+2026-11-03 18:21:29.990 [main] INFO  [user-service, traceId=, spanId=, requestId=] o.s.t.w.s.TestDispatcherServlet - Completed initialization in 58 ms
+2026-11-03 18:21:30.157 [main] INFO  [user-service, traceId=, spanId=, requestId=] com.storex.user.UserTracingTest - Started UserTracingTest in 6.588 seconds (process running for 8.094)
+2026-11-03 18:21:32.452 [main] INFO  [user-service, traceId=6ae9c3bc12b9ebba5db187a84e6b5bd9, spanId=5db187a84e6b5bd9, requestId=gateway-request-id] com.storex.user.UserController - Received user information request
+2026-11-03 18:21:32.453 [main] DEBUG [user-service, traceId=6ae9c3bc12b9ebba5db187a84e6b5bd9, spanId=5db187a84e6b5bd9, requestId=gateway-request-id] com.storex.user.UserController - Looking up tracing demo user
+2026-11-03 18:21:32.456 [main] INFO  [user-service, traceId=6ae9c3bc12b9ebba5db187a84e6b5bd9, spanId=2b42f572a61788c1, requestId=gateway-request-id] com.storex.user.UserService - Fetching user information
+2026-11-03 18:21:32.456 [main] DEBUG [user-service, traceId=6ae9c3bc12b9ebba5db187a84e6b5bd9, spanId=2b42f572a61788c1, requestId=gateway-request-id] com.storex.user.UserService - Returning in-memory tracing demo user

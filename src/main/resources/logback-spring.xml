@@ -1,13 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <configuration>
     <springProperty scope="context"
+                    name="serviceName"
+                    source="spring.application.name"
+                    defaultValue="dynamic-log-level"/>
+    <springProperty scope="context"
                     name="discordWebhookUrl"
                     source="discord.webhook.url"
                     defaultValue=""/>
 
     <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
         <encoder>
-            <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level [%X{requestId}] %logger{36} - %msg%n</pattern>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level [${serviceName}, traceId=%X{traceId:-}, spanId=%X{spanId:-}, requestId=%X{requestId:-}] %logger{36} - %msg%n</pattern>
         </encoder>
     </appender>
 
@@ -20,7 +24,7 @@
             <totalSizeCap>1GB</totalSizeCap>
         </rollingPolicy>
         <encoder>
-            <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level [%X{requestId}] %logger{36} - %msg%n</pattern>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level [${serviceName}, traceId=%X{traceId:-}, spanId=%X{spanId:-}, requestId=%X{requestId:-}] %logger{36} - %msg%n</pattern>
         </encoder>
     </appender>
 

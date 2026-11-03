@@ -1,0 +1,314 @@
+2026-11-03 17:49:45.171 [main] INFO  [order-service, traceId=, spanId=, requestId=] c.s.order.OrderServiceApplication - Starting OrderServiceApplication using Java 21.0.9 with PID 30112 (C:\Users\Laptop\Music\Session18\distributed-tracing\order-service\target\classes started by Laptop in C:\Users\Laptop\Music\Session18\distributed-tracing\order-service)
+2026-11-03 17:49:45.174 [main] DEBUG [order-service, traceId=, spanId=, requestId=] c.s.order.OrderServiceApplication - Running with Spring Boot v3.5.7, Spring v6.2.12
+2026-11-03 17:49:45.183 [main] INFO  [order-service, traceId=, spanId=, requestId=] c.s.order.OrderServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2026-11-03 17:49:50.381 [main] INFO  [order-service, traceId=, spanId=, requestId=] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8081 (http)
+2026-11-03 17:49:50.418 [main] INFO  [order-service, traceId=, spanId=, requestId=] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+2026-11-03 17:49:50.425 [main] INFO  [order-service, traceId=, spanId=, requestId=] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-11-03 17:49:50.426 [main] INFO  [order-service, traceId=, spanId=, requestId=] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.48]
+2026-11-03 17:49:50.730 [main] INFO  [order-service, traceId=, spanId=, requestId=] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-11-03 17:49:50.731 [main] INFO  [order-service, traceId=, spanId=, requestId=] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 5363 ms
+2026-11-03 17:49:51.433 [main] DEBUG [order-service, traceId=, spanId=, requestId=] com.storex.order.RequestIdMdcFilter - Filter 'requestIdMdcFilter' configured for use
+2026-11-03 17:49:53.339 [main] INFO  [order-service, traceId=, spanId=, requestId=] o.s.b.a.e.web.EndpointLinksResolver - Exposing 2 endpoints beneath base path '/actuator'
+2026-11-03 17:49:53.436 [main] INFO  [order-service, traceId=, spanId=, requestId=] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+2026-11-03 17:49:53.473 [main] INFO  [order-service, traceId=, spanId=, requestId=] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8081 (http) with context path '/'
+2026-11-03 17:49:53.501 [main] INFO  [order-service, traceId=, spanId=, requestId=] c.s.order.OrderServiceApplication - Started OrderServiceApplication in 27.162 seconds (process running for 28.522)
+2026-11-03 17:50:04.371 [http-nio-8081-exec-1] INFO  [order-service, traceId=, spanId=, requestId=] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-11-03 17:50:04.371 [http-nio-8081-exec-1] INFO  [order-service, traceId=, spanId=, requestId=] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-11-03 17:50:04.373 [http-nio-8081-exec-1] INFO  [order-service, traceId=, spanId=, requestId=] o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2026-11-03 17:54:57.880 [http-nio-8081-exec-5] INFO  [order-service, traceId=4bf92f3577b34da6a3ce929d0e0e4736, spanId=03d035a3d3ef1169, requestId=b25677e3-19b0-41a1-94ba-57f4b47275f0] com.storex.order.OrderController - Received order tracing request
+2026-11-03 17:54:57.881 [http-nio-8081-exec-5] DEBUG [order-service, traceId=4bf92f3577b34da6a3ce929d0e0e4736, spanId=03d035a3d3ef1169, requestId=b25677e3-19b0-41a1-94ba-57f4b47275f0] com.storex.order.OrderController - Starting order processing
+2026-11-03 17:54:57.882 [http-nio-8081-exec-5] INFO  [order-service, traceId=4bf92f3577b34da6a3ce929d0e0e4736, spanId=c17d75440ab0b848, requestId=b25677e3-19b0-41a1-94ba-57f4b47275f0] com.storex.order.OrderService - Calling User Service
+2026-11-03 17:54:57.883 [http-nio-8081-exec-5] DEBUG [order-service, traceId=4bf92f3577b34da6a3ce929d0e0e4736, spanId=c17d75440ab0b848, requestId=b25677e3-19b0-41a1-94ba-57f4b47275f0] com.storex.order.OrderService - Fetching sample user data
+2026-11-03 17:54:58.106 [http-nio-8081-exec-5] INFO  [order-service, traceId=4bf92f3577b34da6a3ce929d0e0e4736, spanId=03d035a3d3ef1169, requestId=b25677e3-19b0-41a1-94ba-57f4b47275f0] com.storex.order.OrderController - Received user information for order
+2026-11-03 17:55:36.084 [http-nio-8081-exec-6] INFO  [order-service, traceId=6ae9bda84092e48ab158dc9a753eebed, spanId=810ab9384cd970b6, requestId=f30941a1-7d18-457a-a91f-0be17db67f13] com.storex.order.OrderController - Received order tracing request
+2026-11-03 17:55:36.085 [http-nio-8081-exec-6] DEBUG [order-service, traceId=6ae9bda84092e48ab158dc9a753eebed, spanId=810ab9384cd970b6, requestId=f30941a1-7d18-457a-a91f-0be17db67f13] com.storex.order.OrderController - Starting order processing
+2026-11-03 17:55:36.085 [http-nio-8081-exec-6] INFO  [order-service, traceId=6ae9bda84092e48ab158dc9a753eebed, spanId=731da743b9c0bf26, requestId=f30941a1-7d18-457a-a91f-0be17db67f13] com.storex.order.OrderService - Calling User Service
+2026-11-03 17:55:36.085 [http-nio-8081-exec-6] DEBUG [order-service, traceId=6ae9bda84092e48ab158dc9a753eebed, spanId=731da743b9c0bf26, requestId=f30941a1-7d18-457a-a91f-0be17db67f13] com.storex.order.OrderService - Fetching sample user data
+2026-11-03 17:55:36.099 [http-nio-8081-exec-6] INFO  [order-service, traceId=6ae9bda84092e48ab158dc9a753eebed, spanId=810ab9384cd970b6, requestId=f30941a1-7d18-457a-a91f-0be17db67f13] com.storex.order.OrderController - Received user information for order
+2026-11-03 17:58:16.295 [http-nio-8081-exec-8] INFO  [order-service, traceId=6ae9be47e4f9f3430ba65db4b0997eb4, spanId=acf1dbbc6d598d54, requestId=2f5e6efa-d753-4944-aea5-d6bc06e40667] com.storex.order.OrderController - Received order tracing request
+2026-11-03 17:58:16.296 [http-nio-8081-exec-8] DEBUG [order-service, traceId=6ae9be47e4f9f3430ba65db4b0997eb4, spanId=acf1dbbc6d598d54, requestId=2f5e6efa-d753-4944-aea5-d6bc06e40667] com.storex.order.OrderController - Starting order processing
+2026-11-03 17:58:16.296 [http-nio-8081-exec-8] INFO  [order-service, traceId=6ae9be47e4f9f3430ba65db4b0997eb4, spanId=06aa856fcff605c1, requestId=2f5e6efa-d753-4944-aea5-d6bc06e40667] com.storex.order.OrderService - Calling User Service
+2026-11-03 17:58:16.296 [http-nio-8081-exec-8] DEBUG [order-service, traceId=6ae9be47e4f9f3430ba65db4b0997eb4, spanId=06aa856fcff605c1, requestId=2f5e6efa-d753-4944-aea5-d6bc06e40667] com.storex.order.OrderService - Fetching sample user data
+2026-11-03 17:58:16.314 [http-nio-8081-exec-8] INFO  [order-service, traceId=6ae9be47e4f9f3430ba65db4b0997eb4, spanId=acf1dbbc6d598d54, requestId=2f5e6efa-d753-4944-aea5-d6bc06e40667] com.storex.order.OrderController - Received user information for order
+2026-11-03 17:58:37.574 [http-nio-8081-exec-9] INFO  [order-service, traceId=4bf92f3577b34da6a3ce929d0e0e4736, spanId=c56bd55e55309902, requestId=e6d46b85-349c-4b34-8d90-6181b6d7f0cf] com.storex.order.OrderController - Received order tracing request
+2026-11-03 17:58:37.574 [http-nio-8081-exec-9] DEBUG [order-service, traceId=4bf92f3577b34da6a3ce929d0e0e4736, spanId=c56bd55e55309902, requestId=e6d46b85-349c-4b34-8d90-6181b6d7f0cf] com.storex.order.OrderController - Starting order processing
+2026-11-03 17:58:37.574 [http-nio-8081-exec-9] INFO  [order-service, traceId=4bf92f3577b34da6a3ce929d0e0e4736, spanId=e51b41c4946f5812, requestId=e6d46b85-349c-4b34-8d90-6181b6d7f0cf] com.storex.order.OrderService - Calling User Service
+2026-11-03 17:58:37.575 [http-nio-8081-exec-9] DEBUG [order-service, traceId=4bf92f3577b34da6a3ce929d0e0e4736, spanId=e51b41c4946f5812, requestId=e6d46b85-349c-4b34-8d90-6181b6d7f0cf] com.storex.order.OrderService - Fetching sample user data
+2026-11-03 17:58:37.593 [http-nio-8081-exec-9] INFO  [order-service, traceId=4bf92f3577b34da6a3ce929d0e0e4736, spanId=c56bd55e55309902, requestId=e6d46b85-349c-4b34-8d90-6181b6d7f0cf] com.storex.order.OrderController - Received user information for order
+2026-11-03 18:02:44.424 [main] INFO  [order-service, traceId=, spanId=, requestId=] c.s.order.OrderServiceApplication - Starting OrderServiceApplication using Java 21.0.9 with PID 6464 (C:\Users\Laptop\Music\Session18\distributed-tracing\order-service\target\classes started by Laptop in C:\Users\Laptop\Music\Session18\distributed-tracing\order-service)
+2026-11-03 18:02:44.428 [main] DEBUG [order-service, traceId=, spanId=, requestId=] c.s.order.OrderServiceApplication - Running with Spring Boot v3.5.7, Spring v6.2.12
+2026-11-03 18:02:44.428 [main] INFO  [order-service, traceId=, spanId=, requestId=] c.s.order.OrderServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2026-11-03 18:02:46.960 [main] INFO  [order-service, traceId=, spanId=, requestId=] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8081 (http)
+2026-11-03 18:02:46.981 [main] INFO  [order-service, traceId=, spanId=, requestId=] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+2026-11-03 18:02:46.985 [main] INFO  [order-service, traceId=, spanId=, requestId=] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-11-03 18:02:46.985 [main] INFO  [order-service, traceId=, spanId=, requestId=] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.48]
+2026-11-03 18:02:47.081 [main] INFO  [order-service, traceId=, spanId=, requestId=] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-11-03 18:02:47.082 [main] INFO  [order-service, traceId=, spanId=, requestId=] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2554 ms
+2026-11-03 18:02:47.473 [main] DEBUG [order-service, traceId=, spanId=, requestId=] com.storex.order.RequestIdMdcFilter - Filter 'requestIdMdcFilter' configured for use
+2026-11-03 18:02:48.853 [main] INFO  [order-service, traceId=, spanId=, requestId=] o.s.b.a.e.web.EndpointLinksResolver - Exposing 2 endpoints beneath base path '/actuator'
+2026-11-03 18:02:48.948 [main] INFO  [order-service, traceId=, spanId=, requestId=] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+2026-11-03 18:02:48.989 [main] INFO  [order-service, traceId=, spanId=, requestId=] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8081 (http) with context path '/'
+2026-11-03 18:02:49.024 [main] INFO  [order-service, traceId=, spanId=, requestId=] c.s.order.OrderServiceApplication - Started OrderServiceApplication in 5.791 seconds (process running for 6.517)
+2026-11-03 18:04:48.205 [http-nio-8081-exec-1] INFO  [order-service, traceId=, spanId=, requestId=] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-11-03 18:04:48.205 [http-nio-8081-exec-1] INFO  [order-service, traceId=, spanId=, requestId=] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-11-03 18:04:48.206 [http-nio-8081-exec-1] INFO  [order-service, traceId=, spanId=, requestId=] o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2026-11-03 18:04:48.271 [http-nio-8081-exec-1] INFO  [order-service, traceId=4bf92f3577b34da6a3ce929d0e0e4736, spanId=c9da58312ed0693d, requestId=7e960542-4a3f-45a6-b0ed-21f6b0d41822] com.storex.order.OrderController - Received order tracing request
+2026-11-03 18:04:48.271 [http-nio-8081-exec-1] DEBUG [order-service, traceId=4bf92f3577b34da6a3ce929d0e0e4736, spanId=c9da58312ed0693d, requestId=7e960542-4a3f-45a6-b0ed-21f6b0d41822] com.storex.order.OrderController - Starting order processing
+2026-11-03 18:04:48.272 [http-nio-8081-exec-1] INFO  [order-service, traceId=4bf92f3577b34da6a3ce929d0e0e4736, spanId=062823ecac37bb70, requestId=7e960542-4a3f-45a6-b0ed-21f6b0d41822] com.storex.order.OrderService - Calling User Service
+2026-11-03 18:04:48.272 [http-nio-8081-exec-1] DEBUG [order-service, traceId=4bf92f3577b34da6a3ce929d0e0e4736, spanId=062823ecac37bb70, requestId=7e960542-4a3f-45a6-b0ed-21f6b0d41822] com.storex.order.OrderService - Fetching sample user data
+2026-11-03 18:04:48.366 [http-nio-8081-exec-1] ERROR [order-service, traceId=4bf92f3577b34da6a3ce929d0e0e4736, spanId=c9da58312ed0693d, requestId=7e960542-4a3f-45a6-b0ed-21f6b0d41822] com.storex.order.OrderService - User Service request failed
+org.springframework.web.client.ResourceAccessException: I/O error on GET request for "http://localhost:8082/api/users/tracing-test": null
+	at org.springframework.web.client.DefaultRestClient$DefaultRequestBodyUriSpec.createResourceAccessException(DefaultRestClient.java:704)
+	at org.springframework.web.client.DefaultRestClient$DefaultRequestBodyUriSpec.exchangeInternal(DefaultRestClient.java:589)
+	at org.springframework.web.client.DefaultRestClient$DefaultRequestBodyUriSpec.exchange(DefaultRestClient.java:540)
+	at org.springframework.web.client.RestClient$RequestHeadersSpec.exchange(RestClient.java:680)
+	at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.executeAndExtract(DefaultRestClient.java:821)
+	at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.body(DefaultRestClient.java:757)
+	at com.storex.order.OrderService.fetchUser(OrderService.java:39)
+	at com.storex.order.OrderController.testTracing(OrderController.java:23)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:258)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:191)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:991)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:896)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at com.storex.order.RequestIdMdcFilter.doFilterInternal(RequestIdMdcFilter.java:33)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:110)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:88)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1774)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:973)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:491)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: java.net.ConnectException: null
+	at java.net.http/jdk.internal.net.http.common.Utils.toConnectException(Utils.java:1065)
+	at java.net.http/jdk.internal.net.http.PlainHttpConnection.connectAsync(PlainHttpConnection.java:227)
+	at java.net.http/jdk.internal.net.http.PlainHttpConnection.checkRetryConnect(PlainHttpConnection.java:280)
+	at java.net.http/jdk.internal.net.http.PlainHttpConnection.lambda$connectAsync$2(PlainHttpConnection.java:238)
+	at java.base/java.util.concurrent.CompletableFuture.uniHandle(CompletableFuture.java:934)
+	at java.base/java.util.concurrent.CompletableFuture$UniHandle.tryFire(CompletableFuture.java:911)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1773)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	... 1 common frames omitted
+Caused by: java.nio.channels.ClosedChannelException: null
+	at java.base/sun.nio.ch.SocketChannelImpl.ensureOpen(SocketChannelImpl.java:202)
+	at java.base/sun.nio.ch.SocketChannelImpl.beginConnect(SocketChannelImpl.java:786)
+	at java.base/sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:874)
+	at java.net.http/jdk.internal.net.http.PlainHttpConnection.lambda$connectAsync$1(PlainHttpConnection.java:210)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:571)
+	at java.net.http/jdk.internal.net.http.PlainHttpConnection.connectAsync(PlainHttpConnection.java:212)
+	... 9 common frames omitted
+2026-11-03 18:05:23.095 [main] INFO  [order-service, traceId=, spanId=, requestId=] c.s.order.OrderServiceApplication - Starting OrderServiceApplication using Java 21.0.9 with PID 8468 (C:\Users\Laptop\Music\Session18\distributed-tracing\order-service\target\classes started by Laptop in C:\Users\Laptop\Music\Session18\distributed-tracing\order-service)
+2026-11-03 18:05:23.098 [main] DEBUG [order-service, traceId=, spanId=, requestId=] c.s.order.OrderServiceApplication - Running with Spring Boot v3.5.7, Spring v6.2.12
+2026-11-03 18:05:23.099 [main] INFO  [order-service, traceId=, spanId=, requestId=] c.s.order.OrderServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2026-11-03 18:05:26.285 [main] INFO  [order-service, traceId=, spanId=, requestId=] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8081 (http)
+2026-11-03 18:05:26.312 [main] INFO  [order-service, traceId=, spanId=, requestId=] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+2026-11-03 18:05:26.315 [main] INFO  [order-service, traceId=, spanId=, requestId=] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-11-03 18:05:26.316 [main] INFO  [order-service, traceId=, spanId=, requestId=] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.48]
+2026-11-03 18:05:26.426 [main] INFO  [order-service, traceId=, spanId=, requestId=] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-11-03 18:05:26.427 [main] INFO  [order-service, traceId=, spanId=, requestId=] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3214 ms
+2026-11-03 18:05:26.774 [main] DEBUG [order-service, traceId=, spanId=, requestId=] com.storex.order.RequestIdMdcFilter - Filter 'requestIdMdcFilter' configured for use
+2026-11-03 18:05:27.913 [main] INFO  [order-service, traceId=, spanId=, requestId=] o.s.b.a.e.web.EndpointLinksResolver - Exposing 2 endpoints beneath base path '/actuator'
+2026-11-03 18:05:27.998 [main] INFO  [order-service, traceId=, spanId=, requestId=] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+2026-11-03 18:05:28.024 [main] INFO  [order-service, traceId=, spanId=, requestId=] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8081 (http) with context path '/'
+2026-11-03 18:05:28.051 [main] INFO  [order-service, traceId=, spanId=, requestId=] c.s.order.OrderServiceApplication - Started OrderServiceApplication in 6.23 seconds (process running for 7.172)
+2026-11-03 18:06:22.640 [http-nio-8081-exec-1] INFO  [order-service, traceId=, spanId=, requestId=] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-11-03 18:06:22.641 [http-nio-8081-exec-1] INFO  [order-service, traceId=, spanId=, requestId=] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-11-03 18:06:22.647 [http-nio-8081-exec-1] INFO  [order-service, traceId=, spanId=, requestId=] o.s.web.servlet.DispatcherServlet - Completed initialization in 5 ms
+2026-11-03 18:06:23.096 [http-nio-8081-exec-1] INFO  [order-service, traceId=4bf92f3577b34da6a3ce929d0e0e4736, spanId=4be9b3112af1ed47, requestId=9b57f3d8-59e9-44a7-85f1-5f6c3c606438] com.storex.order.OrderController - Received order tracing request
+2026-11-03 18:06:23.096 [http-nio-8081-exec-1] DEBUG [order-service, traceId=4bf92f3577b34da6a3ce929d0e0e4736, spanId=4be9b3112af1ed47, requestId=9b57f3d8-59e9-44a7-85f1-5f6c3c606438] com.storex.order.OrderController - Starting order processing
+2026-11-03 18:06:23.097 [http-nio-8081-exec-1] INFO  [order-service, traceId=4bf92f3577b34da6a3ce929d0e0e4736, spanId=28484f0a49b89550, requestId=9b57f3d8-59e9-44a7-85f1-5f6c3c606438] com.storex.order.OrderService - Calling User Service
+2026-11-03 18:06:23.097 [http-nio-8081-exec-1] DEBUG [order-service, traceId=4bf92f3577b34da6a3ce929d0e0e4736, spanId=28484f0a49b89550, requestId=9b57f3d8-59e9-44a7-85f1-5f6c3c606438] com.storex.order.OrderService - Fetching sample user data
+2026-11-03 18:06:25.368 [http-nio-8081-exec-1] INFO  [order-service, traceId=4bf92f3577b34da6a3ce929d0e0e4736, spanId=4be9b3112af1ed47, requestId=9b57f3d8-59e9-44a7-85f1-5f6c3c606438] com.storex.order.OrderController - Received user information for order
+2026-11-03 18:06:44.282 [http-nio-8081-exec-2] INFO  [order-service, traceId=6ae9c0448e1834e65142a4697ba7d293, spanId=5acd25ebd7a66a93, requestId=2da282e7-235d-4243-b5fa-76e57558ff08] com.storex.order.OrderController - Received order tracing request
+2026-11-03 18:06:44.282 [http-nio-8081-exec-2] DEBUG [order-service, traceId=6ae9c0448e1834e65142a4697ba7d293, spanId=5acd25ebd7a66a93, requestId=2da282e7-235d-4243-b5fa-76e57558ff08] com.storex.order.OrderController - Starting order processing
+2026-11-03 18:06:44.283 [http-nio-8081-exec-2] INFO  [order-service, traceId=6ae9c0448e1834e65142a4697ba7d293, spanId=5037cc075aaea528, requestId=2da282e7-235d-4243-b5fa-76e57558ff08] com.storex.order.OrderService - Calling User Service
+2026-11-03 18:06:44.283 [http-nio-8081-exec-2] DEBUG [order-service, traceId=6ae9c0448e1834e65142a4697ba7d293, spanId=5037cc075aaea528, requestId=2da282e7-235d-4243-b5fa-76e57558ff08] com.storex.order.OrderService - Fetching sample user data
+2026-11-03 18:06:44.294 [http-nio-8081-exec-2] INFO  [order-service, traceId=6ae9c0448e1834e65142a4697ba7d293, spanId=5acd25ebd7a66a93, requestId=2da282e7-235d-4243-b5fa-76e57558ff08] com.storex.order.OrderController - Received user information for order
+2026-11-03 18:10:04.560 [main] INFO  [order-service, traceId=, spanId=, requestId=] c.s.order.OrderServiceApplication - Starting OrderServiceApplication using Java 21.0.9 with PID 14920 (C:\Users\Laptop\Music\Session18\distributed-tracing\order-service\target\classes started by Laptop in C:\Users\Laptop\Music\Session18\distributed-tracing\order-service)
+2026-11-03 18:10:04.563 [main] DEBUG [order-service, traceId=, spanId=, requestId=] c.s.order.OrderServiceApplication - Running with Spring Boot v3.5.7, Spring v6.2.12
+2026-11-03 18:10:04.567 [main] INFO  [order-service, traceId=, spanId=, requestId=] c.s.order.OrderServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2026-11-03 18:10:07.429 [main] INFO  [order-service, traceId=, spanId=, requestId=] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 28081 (http)
+2026-11-03 18:10:07.452 [main] INFO  [order-service, traceId=, spanId=, requestId=] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-28081"]
+2026-11-03 18:10:07.456 [main] INFO  [order-service, traceId=, spanId=, requestId=] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-11-03 18:10:07.457 [main] INFO  [order-service, traceId=, spanId=, requestId=] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.48]
+2026-11-03 18:10:07.568 [main] INFO  [order-service, traceId=, spanId=, requestId=] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-11-03 18:10:07.569 [main] INFO  [order-service, traceId=, spanId=, requestId=] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2887 ms
+2026-11-03 18:10:07.974 [main] DEBUG [order-service, traceId=, spanId=, requestId=] com.storex.order.RequestIdMdcFilter - Filter 'requestIdMdcFilter' configured for use
+2026-11-03 18:10:09.564 [main] INFO  [order-service, traceId=, spanId=, requestId=] o.s.b.a.e.web.EndpointLinksResolver - Exposing 2 endpoints beneath base path '/actuator'
+2026-11-03 18:10:09.662 [main] INFO  [order-service, traceId=, spanId=, requestId=] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-28081"]
+2026-11-03 18:10:09.690 [main] INFO  [order-service, traceId=, spanId=, requestId=] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 28081 (http) with context path '/'
+2026-11-03 18:10:09.721 [main] INFO  [order-service, traceId=, spanId=, requestId=] c.s.order.OrderServiceApplication - Started OrderServiceApplication in 6.489 seconds (process running for 7.282)
+2026-11-03 18:10:43.447 [http-nio-28081-exec-1] INFO  [order-service, traceId=, spanId=, requestId=] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-11-03 18:10:43.447 [http-nio-28081-exec-1] INFO  [order-service, traceId=, spanId=, requestId=] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-11-03 18:10:43.449 [http-nio-28081-exec-1] INFO  [order-service, traceId=, spanId=, requestId=] o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2026-11-03 18:10:43.552 [http-nio-28081-exec-1] INFO  [order-service, traceId=6ae9c1339354d58698409f15d5143d13, spanId=cf9d4e6dbb5cab61, requestId=59eda2a1-f7c1-48ec-88c9-228de813baa0] com.storex.order.OrderController - Received order tracing request
+2026-11-03 18:10:43.552 [http-nio-28081-exec-1] DEBUG [order-service, traceId=6ae9c1339354d58698409f15d5143d13, spanId=cf9d4e6dbb5cab61, requestId=59eda2a1-f7c1-48ec-88c9-228de813baa0] com.storex.order.OrderController - Starting order processing
+2026-11-03 18:10:43.554 [http-nio-28081-exec-1] INFO  [order-service, traceId=6ae9c1339354d58698409f15d5143d13, spanId=1b63d6bb7855ef0a, requestId=59eda2a1-f7c1-48ec-88c9-228de813baa0] com.storex.order.OrderService - Calling User Service
+2026-11-03 18:10:43.554 [http-nio-28081-exec-1] DEBUG [order-service, traceId=6ae9c1339354d58698409f15d5143d13, spanId=1b63d6bb7855ef0a, requestId=59eda2a1-f7c1-48ec-88c9-228de813baa0] com.storex.order.OrderService - Fetching sample user data
+2026-11-03 18:10:43.936 [http-nio-28081-exec-1] INFO  [order-service, traceId=6ae9c1339354d58698409f15d5143d13, spanId=cf9d4e6dbb5cab61, requestId=59eda2a1-f7c1-48ec-88c9-228de813baa0] com.storex.order.OrderController - Received user information for order
+2026-11-03 18:10:44.032 [http-nio-28081-exec-2] INFO  [order-service, traceId=6ae9c1342d6d936df44a62f0f59551a7, spanId=4fcec31fd8fa3ee2, requestId=eab3af63-1379-4888-84de-4ff91095181b] com.storex.order.OrderController - Received order tracing request
+2026-11-03 18:10:44.033 [http-nio-28081-exec-2] DEBUG [order-service, traceId=6ae9c1342d6d936df44a62f0f59551a7, spanId=4fcec31fd8fa3ee2, requestId=eab3af63-1379-4888-84de-4ff91095181b] com.storex.order.OrderController - Starting order processing
+2026-11-03 18:10:44.033 [http-nio-28081-exec-2] INFO  [order-service, traceId=6ae9c1342d6d936df44a62f0f59551a7, spanId=bde53436d2323b91, requestId=eab3af63-1379-4888-84de-4ff91095181b] com.storex.order.OrderService - Calling User Service
+2026-11-03 18:10:44.033 [http-nio-28081-exec-2] DEBUG [order-service, traceId=6ae9c1342d6d936df44a62f0f59551a7, spanId=bde53436d2323b91, requestId=eab3af63-1379-4888-84de-4ff91095181b] com.storex.order.OrderService - Fetching sample user data
+2026-11-03 18:10:44.041 [http-nio-28081-exec-2] INFO  [order-service, traceId=6ae9c1342d6d936df44a62f0f59551a7, spanId=4fcec31fd8fa3ee2, requestId=eab3af63-1379-4888-84de-4ff91095181b] com.storex.order.OrderController - Received user information for order
+2026-11-03 18:12:00.128 [main] INFO  [order-service, traceId=, spanId=, requestId=] c.s.order.OrderServiceApplication - Starting OrderServiceApplication using Java 21.0.9 with PID 28184 (C:\Users\Laptop\Music\Session18\distributed-tracing\order-service\target\classes started by Laptop in C:\Users\Laptop\Music\Session18\distributed-tracing\order-service)
+2026-11-03 18:12:00.132 [main] DEBUG [order-service, traceId=, spanId=, requestId=] c.s.order.OrderServiceApplication - Running with Spring Boot v3.5.7, Spring v6.2.12
+2026-11-03 18:12:00.134 [main] INFO  [order-service, traceId=, spanId=, requestId=] c.s.order.OrderServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2026-11-03 18:12:03.396 [main] INFO  [order-service, traceId=, spanId=, requestId=] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 28081 (http)
+2026-11-03 18:12:03.421 [main] INFO  [order-service, traceId=, spanId=, requestId=] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-28081"]
+2026-11-03 18:12:03.425 [main] INFO  [order-service, traceId=, spanId=, requestId=] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-11-03 18:12:03.426 [main] INFO  [order-service, traceId=, spanId=, requestId=] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.48]
+2026-11-03 18:12:03.530 [main] INFO  [order-service, traceId=, spanId=, requestId=] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-11-03 18:12:03.530 [main] INFO  [order-service, traceId=, spanId=, requestId=] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3277 ms
+2026-11-03 18:12:03.907 [main] DEBUG [order-service, traceId=, spanId=, requestId=] com.storex.order.RequestIdMdcFilter - Filter 'requestIdMdcFilter' configured for use
+2026-11-03 18:12:05.080 [main] INFO  [order-service, traceId=, spanId=, requestId=] o.s.b.a.e.web.EndpointLinksResolver - Exposing 2 endpoints beneath base path '/actuator'
+2026-11-03 18:12:05.157 [main] INFO  [order-service, traceId=, spanId=, requestId=] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-28081"]
+2026-11-03 18:12:05.179 [main] INFO  [order-service, traceId=, spanId=, requestId=] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 28081 (http) with context path '/'
+2026-11-03 18:12:05.201 [main] INFO  [order-service, traceId=, spanId=, requestId=] c.s.order.OrderServiceApplication - Started OrderServiceApplication in 7.054 seconds (process running for 8.285)
+2026-11-03 18:12:36.770 [http-nio-28081-exec-1] INFO  [order-service, traceId=, spanId=, requestId=] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-11-03 18:12:36.771 [http-nio-28081-exec-1] INFO  [order-service, traceId=, spanId=, requestId=] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-11-03 18:12:36.773 [http-nio-28081-exec-1] INFO  [order-service, traceId=, spanId=, requestId=] o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2026-11-03 18:12:36.879 [http-nio-28081-exec-1] INFO  [order-service, traceId=6ae9c1a45dcd67eac3b358d14b3d19b2, spanId=04e35d1648a25920, requestId=736ac16d-8575-4992-a855-9c2ad43e0e31] com.storex.order.OrderController - Received order tracing request
+2026-11-03 18:12:36.880 [http-nio-28081-exec-1] DEBUG [order-service, traceId=6ae9c1a45dcd67eac3b358d14b3d19b2, spanId=04e35d1648a25920, requestId=736ac16d-8575-4992-a855-9c2ad43e0e31] com.storex.order.OrderController - Starting order processing
+2026-11-03 18:12:36.882 [http-nio-28081-exec-1] INFO  [order-service, traceId=6ae9c1a45dcd67eac3b358d14b3d19b2, spanId=41c7db2be8ab80ff, requestId=736ac16d-8575-4992-a855-9c2ad43e0e31] com.storex.order.OrderService - Calling User Service
+2026-11-03 18:12:36.882 [http-nio-28081-exec-1] DEBUG [order-service, traceId=6ae9c1a45dcd67eac3b358d14b3d19b2, spanId=41c7db2be8ab80ff, requestId=736ac16d-8575-4992-a855-9c2ad43e0e31] com.storex.order.OrderService - Fetching sample user data
+2026-11-03 18:12:37.575 [http-nio-28081-exec-1] INFO  [order-service, traceId=6ae9c1a45dcd67eac3b358d14b3d19b2, spanId=04e35d1648a25920, requestId=736ac16d-8575-4992-a855-9c2ad43e0e31] com.storex.order.OrderController - Received user information for order
+2026-11-03 18:12:37.937 [http-nio-28081-exec-2] INFO  [order-service, traceId=6ae9c1a5105059820b7fe68d4b27e518, spanId=3b7db7eb74c3e59e, requestId=1fbfb278-8ba2-4113-84f1-a84bffdbdf80] com.storex.order.OrderController - Received order tracing request
+2026-11-03 18:12:37.937 [http-nio-28081-exec-2] DEBUG [order-service, traceId=6ae9c1a5105059820b7fe68d4b27e518, spanId=3b7db7eb74c3e59e, requestId=1fbfb278-8ba2-4113-84f1-a84bffdbdf80] com.storex.order.OrderController - Starting order processing
+2026-11-03 18:12:37.938 [http-nio-28081-exec-2] INFO  [order-service, traceId=6ae9c1a5105059820b7fe68d4b27e518, spanId=ec292e101a86991f, requestId=1fbfb278-8ba2-4113-84f1-a84bffdbdf80] com.storex.order.OrderService - Calling User Service
+2026-11-03 18:12:37.938 [http-nio-28081-exec-2] DEBUG [order-service, traceId=6ae9c1a5105059820b7fe68d4b27e518, spanId=ec292e101a86991f, requestId=1fbfb278-8ba2-4113-84f1-a84bffdbdf80] com.storex.order.OrderService - Fetching sample user data
+2026-11-03 18:12:37.954 [http-nio-28081-exec-2] INFO  [order-service, traceId=6ae9c1a5105059820b7fe68d4b27e518, spanId=3b7db7eb74c3e59e, requestId=1fbfb278-8ba2-4113-84f1-a84bffdbdf80] com.storex.order.OrderController - Received user information for order
+2026-11-03 18:14:52.792 [main] INFO  [order-service, traceId=, spanId=, requestId=] c.s.order.OrderServiceApplication - Starting OrderServiceApplication using Java 21.0.9 with PID 25336 (C:\Users\Laptop\Music\Session18\distributed-tracing\order-service\target\classes started by Laptop in C:\Users\Laptop\Music\Session18\distributed-tracing\order-service)
+2026-11-03 18:14:52.795 [main] DEBUG [order-service, traceId=, spanId=, requestId=] c.s.order.OrderServiceApplication - Running with Spring Boot v3.5.7, Spring v6.2.12
+2026-11-03 18:14:52.796 [main] INFO  [order-service, traceId=, spanId=, requestId=] c.s.order.OrderServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2026-11-03 18:14:55.324 [main] INFO  [order-service, traceId=, spanId=, requestId=] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 28081 (http)
+2026-11-03 18:14:55.352 [main] INFO  [order-service, traceId=, spanId=, requestId=] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-28081"]
+2026-11-03 18:14:55.358 [main] INFO  [order-service, traceId=, spanId=, requestId=] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-11-03 18:14:55.359 [main] INFO  [order-service, traceId=, spanId=, requestId=] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.48]
+2026-11-03 18:14:55.485 [main] INFO  [order-service, traceId=, spanId=, requestId=] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-11-03 18:14:55.485 [main] INFO  [order-service, traceId=, spanId=, requestId=] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2600 ms
+2026-11-03 18:14:55.959 [main] DEBUG [order-service, traceId=, spanId=, requestId=] com.storex.order.RequestIdMdcFilter - Filter 'requestIdMdcFilter' configured for use
+2026-11-03 18:14:57.359 [main] INFO  [order-service, traceId=, spanId=, requestId=] o.s.b.a.e.web.EndpointLinksResolver - Exposing 2 endpoints beneath base path '/actuator'
+2026-11-03 18:14:57.448 [main] INFO  [order-service, traceId=, spanId=, requestId=] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-28081"]
+2026-11-03 18:14:57.472 [main] INFO  [order-service, traceId=, spanId=, requestId=] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 28081 (http) with context path '/'
+2026-11-03 18:14:57.497 [main] INFO  [order-service, traceId=, spanId=, requestId=] c.s.order.OrderServiceApplication - Started OrderServiceApplication in 5.965 seconds (process running for 6.613)
+2026-11-03 18:16:05.712 [main] INFO  [order-service, traceId=, spanId=, requestId=] c.s.order.OrderServiceApplication - Starting OrderServiceApplication using Java 21.0.9 with PID 27600 (C:\Users\Laptop\Music\Session18\distributed-tracing\order-service\target\classes started by Laptop in C:\Users\Laptop\Music\Session18\distributed-tracing\order-service)
+2026-11-03 18:16:05.716 [main] DEBUG [order-service, traceId=, spanId=, requestId=] c.s.order.OrderServiceApplication - Running with Spring Boot v3.5.7, Spring v6.2.12
+2026-11-03 18:16:05.718 [main] INFO  [order-service, traceId=, spanId=, requestId=] c.s.order.OrderServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2026-11-03 18:16:08.885 [main] INFO  [order-service, traceId=, spanId=, requestId=] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 28081 (http)
+2026-11-03 18:16:08.911 [main] INFO  [order-service, traceId=, spanId=, requestId=] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-28081"]
+2026-11-03 18:16:08.914 [main] INFO  [order-service, traceId=, spanId=, requestId=] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-11-03 18:16:08.914 [main] INFO  [order-service, traceId=, spanId=, requestId=] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.48]
+2026-11-03 18:16:09.044 [main] INFO  [order-service, traceId=, spanId=, requestId=] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-11-03 18:16:09.045 [main] INFO  [order-service, traceId=, spanId=, requestId=] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3152 ms
+2026-11-03 18:16:09.493 [main] DEBUG [order-service, traceId=, spanId=, requestId=] com.storex.order.RequestIdMdcFilter - Filter 'requestIdMdcFilter' configured for use
+2026-11-03 18:16:10.668 [main] INFO  [order-service, traceId=, spanId=, requestId=] o.s.b.a.e.web.EndpointLinksResolver - Exposing 2 endpoints beneath base path '/actuator'
+2026-11-03 18:16:10.754 [main] INFO  [order-service, traceId=, spanId=, requestId=] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-28081"]
+2026-11-03 18:16:10.777 [main] INFO  [order-service, traceId=, spanId=, requestId=] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 28081 (http) with context path '/'
+2026-11-03 18:16:10.807 [main] INFO  [order-service, traceId=, spanId=, requestId=] c.s.order.OrderServiceApplication - Started OrderServiceApplication in 6.831 seconds (process running for 7.773)
+2026-11-03 18:16:47.884 [http-nio-28081-exec-1] INFO  [order-service, traceId=, spanId=, requestId=] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-11-03 18:16:47.884 [http-nio-28081-exec-1] INFO  [order-service, traceId=, spanId=, requestId=] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-11-03 18:16:47.887 [http-nio-28081-exec-1] INFO  [order-service, traceId=, spanId=, requestId=] o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2026-11-03 18:16:47.932 [http-nio-28081-exec-1] DEBUG [order-service, traceId=6ae9c29f9499e95bf220919e0f300e57, spanId=909e1dc7f66a7b16, requestId=3f5cbabe-72ba-42f9-a99a-db49ccf7a623] com.storex.order.RequestIdMdcFilter - Received traceparent header: 00-6ae9c29f9499e95bf220919e0f300e57-929964ef1c601eca-01
+2026-11-03 18:16:47.976 [http-nio-28081-exec-1] INFO  [order-service, traceId=6ae9c29f9499e95bf220919e0f300e57, spanId=909e1dc7f66a7b16, requestId=3f5cbabe-72ba-42f9-a99a-db49ccf7a623] com.storex.order.OrderController - Received order tracing request
+2026-11-03 18:16:47.976 [http-nio-28081-exec-1] DEBUG [order-service, traceId=6ae9c29f9499e95bf220919e0f300e57, spanId=909e1dc7f66a7b16, requestId=3f5cbabe-72ba-42f9-a99a-db49ccf7a623] com.storex.order.OrderController - Starting order processing
+2026-11-03 18:16:47.978 [http-nio-28081-exec-1] INFO  [order-service, traceId=6ae9c29f9499e95bf220919e0f300e57, spanId=760de235a03c0633, requestId=3f5cbabe-72ba-42f9-a99a-db49ccf7a623] com.storex.order.OrderService - Calling User Service
+2026-11-03 18:16:47.978 [http-nio-28081-exec-1] DEBUG [order-service, traceId=6ae9c29f9499e95bf220919e0f300e57, spanId=760de235a03c0633, requestId=3f5cbabe-72ba-42f9-a99a-db49ccf7a623] com.storex.order.OrderService - Fetching sample user data
+2026-11-03 18:16:48.429 [http-nio-28081-exec-1] INFO  [order-service, traceId=6ae9c29f9499e95bf220919e0f300e57, spanId=909e1dc7f66a7b16, requestId=3f5cbabe-72ba-42f9-a99a-db49ccf7a623] com.storex.order.OrderController - Received user information for order
+2026-11-03 18:17:32.867 [main] INFO  [order-service, traceId=, spanId=, requestId=] c.s.order.OrderServiceApplication - Starting OrderServiceApplication using Java 21.0.9 with PID 29488 (C:\Users\Laptop\Music\Session18\distributed-tracing\order-service\target\classes started by Laptop in C:\Users\Laptop\Music\Session18\distributed-tracing\order-service)
+2026-11-03 18:17:32.870 [main] DEBUG [order-service, traceId=, spanId=, requestId=] c.s.order.OrderServiceApplication - Running with Spring Boot v3.5.7, Spring v6.2.12
+2026-11-03 18:17:32.872 [main] INFO  [order-service, traceId=, spanId=, requestId=] c.s.order.OrderServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2026-11-03 18:17:35.499 [main] INFO  [order-service, traceId=, spanId=, requestId=] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 28081 (http)
+2026-11-03 18:17:35.539 [main] INFO  [order-service, traceId=, spanId=, requestId=] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-28081"]
+2026-11-03 18:17:35.545 [main] INFO  [order-service, traceId=, spanId=, requestId=] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-11-03 18:17:35.546 [main] INFO  [order-service, traceId=, spanId=, requestId=] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.48]
+2026-11-03 18:17:35.678 [main] INFO  [order-service, traceId=, spanId=, requestId=] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-11-03 18:17:35.679 [main] INFO  [order-service, traceId=, spanId=, requestId=] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2698 ms
+2026-11-03 18:17:36.173 [main] DEBUG [order-service, traceId=, spanId=, requestId=] com.storex.order.RequestIdMdcFilter - Filter 'requestIdMdcFilter' configured for use
+2026-11-03 18:17:37.951 [main] INFO  [order-service, traceId=, spanId=, requestId=] o.s.b.a.e.web.EndpointLinksResolver - Exposing 2 endpoints beneath base path '/actuator'
+2026-11-03 18:17:38.095 [main] INFO  [order-service, traceId=, spanId=, requestId=] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-28081"]
+2026-11-03 18:17:38.130 [main] INFO  [order-service, traceId=, spanId=, requestId=] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 28081 (http) with context path '/'
+2026-11-03 18:17:38.161 [main] INFO  [order-service, traceId=, spanId=, requestId=] c.s.order.OrderServiceApplication - Started OrderServiceApplication in 6.72 seconds (process running for 7.571)
+2026-11-03 18:18:12.645 [http-nio-28081-exec-1] INFO  [order-service, traceId=, spanId=, requestId=] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-11-03 18:18:12.646 [http-nio-28081-exec-1] INFO  [order-service, traceId=, spanId=, requestId=] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-11-03 18:18:12.649 [http-nio-28081-exec-1] INFO  [order-service, traceId=, spanId=, requestId=] o.s.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+2026-11-03 18:18:12.707 [http-nio-28081-exec-1] DEBUG [order-service, traceId=6ae9c2f4e3b2002962b68d6fc1de6997, spanId=ba2a1f1d49ad3abe, requestId=d64a9e1e-ae96-4919-82f2-7ce5424b6f19] com.storex.order.RequestIdMdcFilter - Received traceparent header: 00-6ae9c2f4e3b2002962b68d6fc1de6997-62b68d6fc1de6997-01
+2026-11-03 18:18:12.756 [http-nio-28081-exec-1] INFO  [order-service, traceId=6ae9c2f4e3b2002962b68d6fc1de6997, spanId=ba2a1f1d49ad3abe, requestId=d64a9e1e-ae96-4919-82f2-7ce5424b6f19] com.storex.order.OrderController - Received order tracing request
+2026-11-03 18:18:12.757 [http-nio-28081-exec-1] DEBUG [order-service, traceId=6ae9c2f4e3b2002962b68d6fc1de6997, spanId=ba2a1f1d49ad3abe, requestId=d64a9e1e-ae96-4919-82f2-7ce5424b6f19] com.storex.order.OrderController - Starting order processing
+2026-11-03 18:18:12.758 [http-nio-28081-exec-1] INFO  [order-service, traceId=6ae9c2f4e3b2002962b68d6fc1de6997, spanId=3af99a9b787aec0e, requestId=d64a9e1e-ae96-4919-82f2-7ce5424b6f19] com.storex.order.OrderService - Calling User Service
+2026-11-03 18:18:12.758 [http-nio-28081-exec-1] DEBUG [order-service, traceId=6ae9c2f4e3b2002962b68d6fc1de6997, spanId=3af99a9b787aec0e, requestId=d64a9e1e-ae96-4919-82f2-7ce5424b6f19] com.storex.order.OrderService - Fetching sample user data
+2026-11-03 18:18:13.431 [http-nio-28081-exec-1] INFO  [order-service, traceId=6ae9c2f4e3b2002962b68d6fc1de6997, spanId=ba2a1f1d49ad3abe, requestId=d64a9e1e-ae96-4919-82f2-7ce5424b6f19] com.storex.order.OrderController - Received user information for order
+2026-11-03 18:19:07.386 [main] INFO  [order-service, traceId=, spanId=, requestId=] c.s.order.OrderServiceApplication - Starting OrderServiceApplication using Java 21.0.9 with PID 16572 (C:\Users\Laptop\Music\Session18\distributed-tracing\order-service\target\classes started by Laptop in C:\Users\Laptop\Music\Session18\distributed-tracing\order-service)
+2026-11-03 18:19:07.388 [main] DEBUG [order-service, traceId=, spanId=, requestId=] c.s.order.OrderServiceApplication - Running with Spring Boot v3.5.7, Spring v6.2.12
+2026-11-03 18:19:07.389 [main] INFO  [order-service, traceId=, spanId=, requestId=] c.s.order.OrderServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2026-11-03 18:19:10.081 [main] INFO  [order-service, traceId=, spanId=, requestId=] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 28081 (http)
+2026-11-03 18:19:10.107 [main] INFO  [order-service, traceId=, spanId=, requestId=] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-28081"]
+2026-11-03 18:19:10.112 [main] INFO  [order-service, traceId=, spanId=, requestId=] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-11-03 18:19:10.112 [main] INFO  [order-service, traceId=, spanId=, requestId=] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.48]
+2026-11-03 18:19:10.335 [main] INFO  [order-service, traceId=, spanId=, requestId=] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-11-03 18:19:10.335 [main] INFO  [order-service, traceId=, spanId=, requestId=] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2834 ms
+2026-11-03 18:19:10.770 [main] DEBUG [order-service, traceId=, spanId=, requestId=] com.storex.order.RequestIdMdcFilter - Filter 'requestIdMdcFilter' configured for use
+2026-11-03 18:19:12.046 [main] INFO  [order-service, traceId=, spanId=, requestId=] o.s.b.a.e.web.EndpointLinksResolver - Exposing 2 endpoints beneath base path '/actuator'
+2026-11-03 18:19:12.156 [main] INFO  [order-service, traceId=, spanId=, requestId=] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-28081"]
+2026-11-03 18:19:12.189 [main] INFO  [order-service, traceId=, spanId=, requestId=] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 28081 (http) with context path '/'
+2026-11-03 18:19:12.220 [main] INFO  [order-service, traceId=, spanId=, requestId=] c.s.order.OrderServiceApplication - Started OrderServiceApplication in 6.272 seconds (process running for 6.935)
+2026-11-03 18:20:14.365 [http-nio-28081-exec-1] INFO  [order-service, traceId=, spanId=, requestId=] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-11-03 18:20:14.366 [http-nio-28081-exec-1] INFO  [order-service, traceId=, spanId=, requestId=] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-11-03 18:20:14.367 [http-nio-28081-exec-1] INFO  [order-service, traceId=, spanId=, requestId=] o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2026-11-03 18:20:14.431 [http-nio-28081-exec-1] DEBUG [order-service, traceId=4bf92f3577b34da6a3ce929d0e0e4736, spanId=9ea341472aa94d9b, requestId=1937b3e4-4fe8-4a9f-bd8b-c3237d8a3241] com.storex.order.RequestIdMdcFilter - Received traceparent header: 00-4bf92f3577b34da6a3ce929d0e0e4736-ff108f33299d47a1-01
+2026-11-03 18:20:14.495 [http-nio-28081-exec-1] INFO  [order-service, traceId=4bf92f3577b34da6a3ce929d0e0e4736, spanId=9ea341472aa94d9b, requestId=1937b3e4-4fe8-4a9f-bd8b-c3237d8a3241] com.storex.order.OrderController - Received order tracing request
+2026-11-03 18:20:14.496 [http-nio-28081-exec-1] DEBUG [order-service, traceId=4bf92f3577b34da6a3ce929d0e0e4736, spanId=9ea341472aa94d9b, requestId=1937b3e4-4fe8-4a9f-bd8b-c3237d8a3241] com.storex.order.OrderController - Starting order processing
+2026-11-03 18:20:14.498 [http-nio-28081-exec-1] INFO  [order-service, traceId=4bf92f3577b34da6a3ce929d0e0e4736, spanId=a90d0d09b7338280, requestId=1937b3e4-4fe8-4a9f-bd8b-c3237d8a3241] com.storex.order.OrderService - Calling User Service
+2026-11-03 18:20:14.498 [http-nio-28081-exec-1] DEBUG [order-service, traceId=4bf92f3577b34da6a3ce929d0e0e4736, spanId=a90d0d09b7338280, requestId=1937b3e4-4fe8-4a9f-bd8b-c3237d8a3241] com.storex.order.OrderService - Fetching sample user data
+2026-11-03 18:20:15.166 [http-nio-28081-exec-1] INFO  [order-service, traceId=4bf92f3577b34da6a3ce929d0e0e4736, spanId=9ea341472aa94d9b, requestId=1937b3e4-4fe8-4a9f-bd8b-c3237d8a3241] com.storex.order.OrderController - Received user information for order
+2026-11-03 18:20:15.529 [http-nio-28081-exec-9] DEBUG [order-service, traceId=6ae9c36f4aa3b8b485f5790e98e20bc8, spanId=661d45552efefd6f, requestId=d026eaa1-8a63-4577-aa00-a8d2ebdfd869] com.storex.order.RequestIdMdcFilter - Received traceparent header: 00-6ae9c36f4aa3b8b485f5790e98e20bc8-fc36656af8604811-01
+2026-11-03 18:20:15.530 [http-nio-28081-exec-9] INFO  [order-service, traceId=6ae9c36f4aa3b8b485f5790e98e20bc8, spanId=661d45552efefd6f, requestId=d026eaa1-8a63-4577-aa00-a8d2ebdfd869] com.storex.order.OrderController - Received order tracing request
+2026-11-03 18:20:15.530 [http-nio-28081-exec-9] DEBUG [order-service, traceId=6ae9c36f4aa3b8b485f5790e98e20bc8, spanId=661d45552efefd6f, requestId=d026eaa1-8a63-4577-aa00-a8d2ebdfd869] com.storex.order.OrderController - Starting order processing
+2026-11-03 18:20:15.531 [http-nio-28081-exec-9] INFO  [order-service, traceId=6ae9c36f4aa3b8b485f5790e98e20bc8, spanId=bf85c7475e88ff5d, requestId=d026eaa1-8a63-4577-aa00-a8d2ebdfd869] com.storex.order.OrderService - Calling User Service
+2026-11-03 18:20:15.531 [http-nio-28081-exec-9] DEBUG [order-service, traceId=6ae9c36f4aa3b8b485f5790e98e20bc8, spanId=bf85c7475e88ff5d, requestId=d026eaa1-8a63-4577-aa00-a8d2ebdfd869] com.storex.order.OrderService - Fetching sample user data
+2026-11-03 18:20:15.542 [http-nio-28081-exec-9] INFO  [order-service, traceId=6ae9c36f4aa3b8b485f5790e98e20bc8, spanId=661d45552efefd6f, requestId=d026eaa1-8a63-4577-aa00-a8d2ebdfd869] com.storex.order.OrderController - Received user information for order

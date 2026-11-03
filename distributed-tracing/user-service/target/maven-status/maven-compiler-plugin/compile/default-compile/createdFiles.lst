@@ -1,0 +1,5 @@
+com\storex\user\UserController.class
+com\storex\user\UserService.class
+com\storex\user\UserServiceApplication.class
+com\storex\user\RequestIdMdcFilter.class
+com\storex\user\UserInformation.class

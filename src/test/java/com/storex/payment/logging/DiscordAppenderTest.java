@@ -33,7 +33,10 @@ class DiscordAppenderTest {
         event.setMessage(
                 "Payment failed for password=super-secret jdbc:postgresql://db-user:db-pass@db.example/orders");
         event.setTimeStamp(1_793_700_000_000L);
-        event.setMDCPropertyMap(Map.of("requestId", "test-request-123"));
+        event.setMDCPropertyMap(Map.of(
+                "requestId", "test-request-123",
+                "traceId", "test-trace-456",
+                "spanId", "test-span-789"));
 
         DiscordAppender appender = new DiscordAppender();
         JsonNode payload = objectMapper.readTree(appender.createPayload(event));
@@ -46,6 +49,8 @@ class DiscordAppenderTest {
         assertFalse(embed.path("description").asText().contains("super-secret"));
         assertFalse(embed.path("description").asText().contains("db-pass"));
         assertEquals("test-request-123", fieldValue(fields, "Request ID"));
+        assertEquals("test-trace-456", fieldValue(fields, "Trace ID"));
+        assertEquals("test-span-789", fieldValue(fields, "Span ID"));
         assertEquals("com.storex.payment.PaymentService", fieldValue(fields, "Logger"));
         assertEquals(List.of(), payload.path("allowed_mentions").path("parse").findValuesAsText(""));
     }

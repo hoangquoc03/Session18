@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: user-service
+
+server:
+  port: ${SERVER_PORT:8082}
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info
+  tracing:
+    sampling:
+      probability: 1.0
+    propagation:
+      type: w3c
+
+logging:
+  level:
+    com.storex.user: DEBUG

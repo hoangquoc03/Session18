@@ -1,0 +1,8 @@
+com\storex\order\UserInformation.class
+com\storex\order\OrderExceptionHandler.class
+com\storex\order\OrderService.class
+com\storex\order\OrderTracingResponse.class
+com\storex\order\OrderController.class
+com\storex\order\OrderServiceConfiguration.class
+com\storex\order\RequestIdMdcFilter.class
+com\storex\order\OrderServiceApplication.class

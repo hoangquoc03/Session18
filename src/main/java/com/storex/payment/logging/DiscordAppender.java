@@ -160,7 +160,15 @@ public class DiscordAppender extends AppenderBase<ILoggingEvent> {
 
         Map<String, String> mdcProperties = eventObject.getMDCPropertyMap();
         String requestId = mdcProperties == null ? null : mdcProperties.get("requestId");
+        String traceId = mdcProperties == null ? null : mdcProperties.get("traceId");
+        String spanId = mdcProperties == null ? null : mdcProperties.get("spanId");
         fields.add(field("Request ID", requestId == null || requestId.isBlank() ? "Not available" : requestId, false));
+        if (traceId != null && !traceId.isBlank()) {
+            fields.add(field("Trace ID", traceId, false));
+        }
+        if (spanId != null && !spanId.isBlank()) {
+            fields.add(field("Span ID", spanId, false));
+        }
 
         if (eventObject.getThrowableProxy() != null) {
             String stackTrace = sanitize(ThrowableProxyUtil.asString(eventObject.getThrowableProxy()));
