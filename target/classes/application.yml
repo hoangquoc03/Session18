@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: dynamic-log-level
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,loggers
+  endpoint:
+    loggers:
+      enabled: true
