@@ -2,6 +2,10 @@ spring:
   application:
     name: dynamic-log-level
 
+discord:
+  webhook:
+    url: ${DISCORD_WEBHOOK_URL:}
+
 management:
   endpoints:
     web:

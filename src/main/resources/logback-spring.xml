@@ -1,12 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <configuration>
+    <springProperty scope="context"
+                    name="discordWebhookUrl"
+                    source="discord.webhook.url"
+                    defaultValue=""/>
+
     <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
         <encoder>
             <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level [%X{requestId}] %logger{36} - %msg%n</pattern>
         </encoder>
     </appender>
 
+    <appender name="DISCORD" class="com.storex.payment.logging.DiscordAppender">
+        <webhookUrl>${discordWebhookUrl}</webhookUrl>
+    </appender>
+
     <root level="INFO">
         <appender-ref ref="CONSOLE"/>
+        <appender-ref ref="DISCORD"/>
     </root>
 </configuration>
